@@ -1,0 +1,22 @@
+<resources>
+    <fitContributions>
+        <fitField id="1"
+        displayInChart="true"
+        sortOrder = "0"
+        precision="0"
+        chartTitle="@Strings.running_power_label"
+        dataLabel="@Strings.running_power_label"
+        unitLabel="@Strings.running_power_units"
+        fillColor="#00FF00" />
+    </fitContributions>
+    <fitContributions>
+        <fitField id="2"
+        displayInChart="true"
+        sortOrder = "1"
+        precision="0"
+        chartTitle="@Strings.slope_label"
+        dataLabel="@Strings.slope_label"
+        unitLabel="@Strings.slope_units"
+        fillColor="#FF0000" />
+    </fitContributions>
+</resources>
