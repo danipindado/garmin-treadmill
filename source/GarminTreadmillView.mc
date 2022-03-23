@@ -1,7 +1,7 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 
-class customdatafieldView extends Ui.DataField {
+class GarminTreadmillView extends Ui.DataField {
 
 	hidden var elapsedTime = 0; 
     hidden var lastComputeTime = 0;

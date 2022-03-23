@@ -1,6 +1,6 @@
 using Toybox.Application as App;
 
-class customdatafieldApp extends App.AppBase {
+class GarminTreadmillApp extends App.AppBase {
 
     function initialize() {
         AppBase.initialize();
@@ -16,7 +16,7 @@ class customdatafieldApp extends App.AppBase {
 
     //! Return the initial view of your application here
     function getInitialView() {
-        return [ new customdatafieldView() ];
-    }
+        return [ new GarminTreadmillView() ];
+    }   
 
 }
