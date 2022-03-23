@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="D:\bitbucket\garmin-data-field\manifest.xml"/>
+<pcToLineNum>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="1" lineNum="9" parent="globals/Background" pc="268435456" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="1" lineNum="10" parent="globals/Background" pc="268435460" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="1" lineNum="14" parent="globals/Background" pc="268435481" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="2" lineNum="17" parent="globals/Background" pc="268435502" symbol="setColor"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="2" lineNum="18" parent="globals/Background" pc="268435506" symbol="setColor"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="3" lineNum="21" parent="globals/Background" pc="268435517" symbol="draw"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="3" lineNum="22" parent="globals/Background" pc="268435521" symbol="draw"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="3" lineNum="23" parent="globals/Background" pc="268435553" symbol="draw"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="4" lineNum="5" parent="globals/Background" pc="268442095" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldBackground.mc" id="4" lineNum="5" parent="globals/Background" pc="268442095" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="6" lineNum="18" parent="globals/FitContributor" pc="268435566" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="6" lineNum="19" parent="globals/FitContributor" pc="268435570" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="6" lineNum="21" parent="globals/FitContributor" pc="268435663" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="7" lineNum="24" parent="globals/FitContributor" pc="268435687" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="7" lineNum="26" parent="globals/FitContributor" pc="268435691" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="7" lineNum="29" parent="globals/FitContributor" pc="268435698" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="7" lineNum="31" parent="globals/FitContributor" pc="268435724" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="8" lineNum="40" parent="globals/FitContributor" pc="268435742" symbol="setTimerRunning"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="8" lineNum="41" parent="globals/FitContributor" pc="268435746" symbol="setTimerRunning"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="9" lineNum="44" parent="globals/FitContributor" pc="268435757" symbol="onTimerLap"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="10" lineNum="47" parent="globals/FitContributor" pc="268435762" symbol="onTimerReset"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\fitContributions.mc" id="11" lineNum="11" parent="globals/FitContributor" pc="268441987" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="24" parent="globals/KalmanFilter" pc="268435767" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="26" parent="globals/KalmanFilter" pc="268435771" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="27" parent="globals/KalmanFilter" pc="268435781" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="29" parent="globals/KalmanFilter" pc="268435791" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="30" parent="globals/KalmanFilter" pc="268435801" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="32" parent="globals/KalmanFilter" pc="268435811" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="34" parent="globals/KalmanFilter" pc="268435821" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="35" parent="globals/KalmanFilter" pc="268435879" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="36" parent="globals/KalmanFilter" pc="268435928" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="37" parent="globals/KalmanFilter" pc="268435977" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="39" parent="globals/KalmanFilter" pc="268436011" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="40" parent="globals/KalmanFilter" pc="268436024" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="41" parent="globals/KalmanFilter" pc="268436037" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="13" lineNum="42" parent="globals/KalmanFilter" pc="268436050" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="52" parent="globals/KalmanFilter" pc="268436064" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="54" parent="globals/KalmanFilter" pc="268436068" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="55" parent="globals/KalmanFilter" pc="268436068" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="56" parent="globals/KalmanFilter" pc="268436068" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="58" parent="globals/KalmanFilter" pc="268436068" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="59" parent="globals/KalmanFilter" pc="268436096" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="61" parent="globals/KalmanFilter" pc="268436106" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="62" parent="globals/KalmanFilter" pc="268436125" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="64" parent="globals/KalmanFilter" pc="268436147" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="65" parent="globals/KalmanFilter" pc="268436160" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="66" parent="globals/KalmanFilter" pc="268436200" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="67" parent="globals/KalmanFilter" pc="268436213" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="69" parent="globals/KalmanFilter" pc="268436232" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="70" parent="globals/KalmanFilter" pc="268436239" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="72" parent="globals/KalmanFilter" pc="268436252" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="73" parent="globals/KalmanFilter" pc="268436259" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="75" parent="globals/KalmanFilter" pc="268436266" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="76" parent="globals/KalmanFilter" pc="268436282" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="78" parent="globals/KalmanFilter" pc="268436298" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="79" parent="globals/KalmanFilter" pc="268436308" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="80" parent="globals/KalmanFilter" pc="268436321" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="81" parent="globals/KalmanFilter" pc="268436334" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="14" lineNum="82" parent="globals/KalmanFilter" pc="268436350" symbol="KalmanPosVel"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\KalmanFilter.mc" id="15" lineNum="4" parent="globals/KalmanFilter" pc="268442094" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="17" lineNum="5" parent="globals/Matrix" pc="268436367" symbol="addMatrices"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="17" lineNum="7" parent="globals/Matrix" pc="268436371" symbol="addMatrices"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="18" lineNum="10" parent="globals/Matrix" pc="268436479" symbol="dotMatrices"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="18" lineNum="12" parent="globals/Matrix" pc="268436483" symbol="dotMatrices"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="19" lineNum="15" parent="globals/Matrix" pc="268436663" symbol="transposeMatrix"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="19" lineNum="17" parent="globals/Matrix" pc="268436667" symbol="transposeMatrix"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="20" lineNum="20" parent="globals/Matrix" pc="268436739" symbol="getMatrixInverse"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="20" lineNum="22" parent="globals/Matrix" pc="268436743" symbol="getMatrixInverse"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="20" lineNum="24" parent="globals/Matrix" pc="268436780" symbol="getMatrixInverse"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="21" lineNum="3" parent="globals/Matrix" pc="268441986" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\Matrix.mc" id="22" lineNum="3" parent="globals/Matrix" pc="268436876" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="24" lineNum="26" parent="globals/customdatafieldView" pc="268436879" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="24" lineNum="27" parent="globals/customdatafieldView" pc="268436883" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="24" lineNum="28" parent="globals/customdatafieldView" pc="268436901" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="24" lineNum="29" parent="globals/customdatafieldView" pc="268436931" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="36" parent="globals/customdatafieldView" pc="268436964" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="38" parent="globals/customdatafieldView" pc="268436968" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="39" parent="globals/customdatafieldView" pc="268437005" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="40" parent="globals/customdatafieldView" pc="268437042" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="42" parent="globals/customdatafieldView" pc="268437062" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="44" parent="globals/customdatafieldView" pc="268437075" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="48" parent="globals/customdatafieldView" pc="268437133" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="50" parent="globals/customdatafieldView" pc="268437159" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="51" parent="globals/customdatafieldView" pc="268437196" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="52" parent="globals/customdatafieldView" pc="268437221" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="53" parent="globals/customdatafieldView" pc="268437246" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="54" parent="globals/customdatafieldView" pc="268437321" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="55" parent="globals/customdatafieldView" pc="268437383" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="56" parent="globals/customdatafieldView" pc="268437454" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="57" parent="globals/customdatafieldView" pc="268437479" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="58" parent="globals/customdatafieldView" pc="268437535" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="59" parent="globals/customdatafieldView" pc="268437591" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="25" lineNum="60" parent="globals/customdatafieldView" pc="268437607" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="26" lineNum="72" parent="globals/customdatafieldView" pc="268437651" symbol="onTimerLap"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="26" lineNum="73" parent="globals/customdatafieldView" pc="268437655" symbol="onTimerLap"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="26" lineNum="74" parent="globals/customdatafieldView" pc="268437671" symbol="onTimerLap"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="26" lineNum="75" parent="globals/customdatafieldView" pc="268437687" symbol="onTimerLap"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="27" lineNum="78" parent="globals/customdatafieldView" pc="268437704" symbol="onWorkoutStepComplete"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="27" lineNum="80" parent="globals/customdatafieldView" pc="268437708" symbol="onWorkoutStepComplete"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="85" parent="globals/customdatafieldView" pc="268437721" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="87" parent="globals/customdatafieldView" pc="268437725" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="88" parent="globals/customdatafieldView" pc="268437738" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="90" parent="globals/customdatafieldView" pc="268437751" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="91" parent="globals/customdatafieldView" pc="268437764" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="92" parent="globals/customdatafieldView" pc="268437817" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="93" parent="globals/customdatafieldView" pc="268437870" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="94" parent="globals/customdatafieldView" pc="268437886" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="96" parent="globals/customdatafieldView" pc="268437902" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="99" parent="globals/customdatafieldView" pc="268437934" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="100" parent="globals/customdatafieldView" pc="268437950" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="103" parent="globals/customdatafieldView" pc="268437976" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="104" parent="globals/customdatafieldView" pc="268438016" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="105" parent="globals/customdatafieldView" pc="268438033" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="106" parent="globals/customdatafieldView" pc="268438068" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="107" parent="globals/customdatafieldView" pc="268438103" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="108" parent="globals/customdatafieldView" pc="268438138" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="111" parent="globals/customdatafieldView" pc="268438182" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="112" parent="globals/customdatafieldView" pc="268438198" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="113" parent="globals/customdatafieldView" pc="268438205" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="115" parent="globals/customdatafieldView" pc="268438246" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="116" parent="globals/customdatafieldView" pc="268438262" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="119" parent="globals/customdatafieldView" pc="268438272" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="120" parent="globals/customdatafieldView" pc="268438304" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="123" parent="globals/customdatafieldView" pc="268438336" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="124" parent="globals/customdatafieldView" pc="268438364" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="125" parent="globals/customdatafieldView" pc="268438404" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="126" parent="globals/customdatafieldView" pc="268438453" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="127" parent="globals/customdatafieldView" pc="268438502" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="128" parent="globals/customdatafieldView" pc="268438551" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="129" parent="globals/customdatafieldView" pc="268438600" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="131" parent="globals/customdatafieldView" pc="268438649" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="133" parent="globals/customdatafieldView" pc="268438677" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="135" parent="globals/customdatafieldView" pc="268438725" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="136" parent="globals/customdatafieldView" pc="268438725" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="137" parent="globals/customdatafieldView" pc="268438750" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="138" parent="globals/customdatafieldView" pc="268438783" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="139" parent="globals/customdatafieldView" pc="268438802" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="140" parent="globals/customdatafieldView" pc="268438827" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="142" parent="globals/customdatafieldView" pc="268438852" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="143" parent="globals/customdatafieldView" pc="268438863" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="144" parent="globals/customdatafieldView" pc="268438927" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="146" parent="globals/customdatafieldView" pc="268438988" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="147" parent="globals/customdatafieldView" pc="268439029" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="150" parent="globals/customdatafieldView" pc="268439078" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="151" parent="globals/customdatafieldView" pc="268439085" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="154" parent="globals/customdatafieldView" pc="268439131" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="156" parent="globals/customdatafieldView" pc="268439131" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="157" parent="globals/customdatafieldView" pc="268439148" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="159" parent="globals/customdatafieldView" pc="268439158" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="162" parent="globals/customdatafieldView" pc="268439182" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="165" parent="globals/customdatafieldView" pc="268439228" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="166" parent="globals/customdatafieldView" pc="268439228" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="167" parent="globals/customdatafieldView" pc="268439245" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="169" parent="globals/customdatafieldView" pc="268439272" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="172" parent="globals/customdatafieldView" pc="268439279" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="174" parent="globals/customdatafieldView" pc="268439325" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="175" parent="globals/customdatafieldView" pc="268439325" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="176" parent="globals/customdatafieldView" pc="268439342" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="178" parent="globals/customdatafieldView" pc="268439369" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="181" parent="globals/customdatafieldView" pc="268439376" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="184" parent="globals/customdatafieldView" pc="268439422" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="185" parent="globals/customdatafieldView" pc="268439422" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="186" parent="globals/customdatafieldView" pc="268439439" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="188" parent="globals/customdatafieldView" pc="268439449" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="28" lineNum="190" parent="globals/customdatafieldView" pc="268439473" symbol="onUpdate"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="29" lineNum="194" parent="globals/customdatafieldView" pc="268439520" symbol="onTimerStart"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="29" lineNum="195" parent="globals/customdatafieldView" pc="268439524" symbol="onTimerStart"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="30" lineNum="198" parent="globals/customdatafieldView" pc="268439545" symbol="onTimerStop"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="30" lineNum="199" parent="globals/customdatafieldView" pc="268439549" symbol="onTimerStop"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="31" lineNum="202" parent="globals/customdatafieldView" pc="268439570" symbol="onTimerPause"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="31" lineNum="203" parent="globals/customdatafieldView" pc="268439574" symbol="onTimerPause"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="32" lineNum="206" parent="globals/customdatafieldView" pc="268439595" symbol="onTimerResume"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="32" lineNum="207" parent="globals/customdatafieldView" pc="268439599" symbol="onTimerResume"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="33" lineNum="4" parent="globals/customdatafieldView" pc="268442056" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldView.mc" id="33" lineNum="4" parent="globals/customdatafieldView" pc="268442056" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldApp.mc" id="35" lineNum="5" parent="globals/customdatafieldApp" pc="268439620" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldApp.mc" id="35" lineNum="6" parent="globals/customdatafieldApp" pc="268439624" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldApp.mc" id="36" lineNum="10" parent="globals/customdatafieldApp" pc="268439643" symbol="onStart"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldApp.mc" id="37" lineNum="14" parent="globals/customdatafieldApp" pc="268439648" symbol="onStop"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldApp.mc" id="38" lineNum="18" parent="globals/customdatafieldApp" pc="268439653" symbol="getInitialView"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldApp.mc" id="38" lineNum="19" parent="globals/customdatafieldApp" pc="268439657" symbol="getInitialView"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldApp.mc" id="39" lineNum="3" parent="globals/customdatafieldApp" pc="268442075" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\customdatafieldApp.mc" id="39" lineNum="3" parent="globals/customdatafieldApp" pc="268442075" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\RunningPower.mc" id="41" lineNum="8" parent="globals/RunningPower" pc="268439695" symbol="Strava"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\RunningPower.mc" id="41" lineNum="10" parent="globals/RunningPower" pc="268439699" symbol="Strava"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\RunningPower.mc" id="41" lineNum="13" parent="globals/RunningPower" pc="268439742" symbol="Strava"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\RunningPower.mc" id="41" lineNum="14" parent="globals/RunningPower" pc="268439755" symbol="Strava"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\RunningPower.mc" id="42" lineNum="3" parent="globals/RunningPower" pc="268441985" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\RunningPower.mc" id="43" lineNum="3" parent="globals/RunningPower" pc="268439759" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\VerticalState.mc" id="45" lineNum="3" parent="globals/VerticalState" pc="268439762" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\VerticalState.mc" id="45" lineNum="5" parent="globals/VerticalState" pc="268439766" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\VerticalState.mc" id="46" lineNum="8" parent="globals/VerticalState" pc="268439807" symbol="update"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\VerticalState.mc" id="46" lineNum="10" parent="globals/VerticalState" pc="268439811" symbol="update"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\VerticalState.mc" id="47" lineNum="1" parent="globals/VerticalState" pc="268442037" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-data-field\\source\\VerticalState.mc" id="47" lineNum="1" parent="globals/VerticalState" pc="268442037" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="49" lineNum="12" parent="globals/Rez/Drawables/frameDrawable" pc="268439832" symbol="initialize"/>
+<entry filename="Rez" id="49" lineNum="13" parent="globals/Rez/Drawables/frameDrawable" pc="268439836" symbol="initialize"/>
+<entry filename="Rez" id="50" lineNum="16" parent="globals/Rez/Drawables/frameDrawable" pc="268439861" symbol="draw"/>
+<entry filename="Rez" id="50" lineNum="17" parent="globals/Rez/Drawables/frameDrawable" pc="268439865" symbol="draw"/>
+<entry filename="Rez" id="50" lineNum="20" parent="globals/Rez/Drawables/frameDrawable" pc="268439878" symbol="draw"/>
+<entry filename="Rez" id="50" lineNum="21" parent="globals/Rez/Drawables/frameDrawable" pc="268439914" symbol="draw"/>
+<entry filename="Rez" id="50" lineNum="23" parent="globals/Rez/Drawables/frameDrawable" pc="268439961" symbol="draw"/>
+<entry filename="Rez" id="50" lineNum="24" parent="globals/Rez/Drawables/frameDrawable" pc="268439997" symbol="draw"/>
+<entry filename="Rez" id="50" lineNum="26" parent="globals/Rez/Drawables/frameDrawable" pc="268440080" symbol="draw"/>
+<entry filename="Rez" id="50" lineNum="27" parent="globals/Rez/Drawables/frameDrawable" pc="268440116" symbol="draw"/>
+<entry filename="Rez" id="50" lineNum="29" parent="globals/Rez/Drawables/frameDrawable" pc="268440163" symbol="draw"/>
+<entry filename="Rez" id="50" lineNum="30" parent="globals/Rez/Drawables/frameDrawable" pc="268440199" symbol="draw"/>
+<entry filename="Rez" id="51" lineNum="10" parent="globals/Rez/Drawables/frameDrawable" pc="268442013" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="51" lineNum="10" parent="globals/Rez/Drawables/frameDrawable" pc="268442013" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="52" lineNum="2" parent="globals/Rez/Drawables" pc="268442012" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="53" lineNum="37" parent="globals/Rez/Fonts" pc="268442033" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="54" lineNum="39" parent="globals/Rez/JsonData" pc="268442035" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="55" lineNum="48" parent="globals/Rez/Layouts" pc="268440259" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="50" parent="globals/Rez/Layouts" pc="268440271" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="52" parent="globals/Rez/Layouts" pc="268440284" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="53" parent="globals/Rez/Layouts" pc="268440308" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="54" parent="globals/Rez/Layouts" pc="268440348" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="55" parent="globals/Rez/Layouts" pc="268440361" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="57" parent="globals/Rez/Layouts" pc="268440377" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="58" parent="globals/Rez/Layouts" pc="268440513" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="59" parent="globals/Rez/Layouts" pc="268440646" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="60" parent="globals/Rez/Layouts" pc="268440779" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="61" parent="globals/Rez/Layouts" pc="268440912" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="62" parent="globals/Rez/Layouts" pc="268441045" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="63" parent="globals/Rez/Layouts" pc="268441178" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="64" parent="globals/Rez/Layouts" pc="268441311" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="65" parent="globals/Rez/Layouts" pc="268441444" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="66" parent="globals/Rez/Layouts" pc="268441577" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="67" parent="globals/Rez/Layouts" pc="268441710" symbol="MainLayout"/>
+<entry filename="Rez" id="55" lineNum="69" parent="globals/Rez/Layouts" pc="268441846" symbol="MainLayout"/>
+<entry filename="Rez" id="56" lineNum="41" parent="globals/Rez/Layouts" pc="268442034" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="57" lineNum="74" parent="globals/Rez/Menus" pc="268442032" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="58" lineNum="76" parent="globals/Rez/Strings" pc="268442036" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="59" lineNum="1" parent="globals/Rez" pc="268441988" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="59" lineNum="1" parent="globals/Rez" pc="268441988" symbol="&lt;init&gt;"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="37" symbol="lapStartEnergy"/>
+<entry id="15" method="true" symbol="Strava"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry field="true" id="28" symbol="slope_units"/>
+<entry field="true" id="54" symbol="Q22"/>
+<entry field="true" id="53" symbol="Q21"/>
+<entry id="4" module="true" symbol="globals/Rez/Menus"/>
+<entry id="8389849" symbol="units"/>
+<entry field="true" id="52" symbol="Q12"/>
+<entry field="true" id="51" symbol="Q11"/>
+<entry id="27" method="true" symbol="MainLayout"/>
+<entry id="8389748" method="true" symbol="onTimerStop"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="11" object="true" symbol="customdatafieldView"/>
+<entry field="true" id="43" symbol="currentSlope"/>
+<entry id="8389747" method="true" symbol="onTimerStart"/>
+<entry field="true" id="32" symbol="AppName"/>
+<entry id="8389749" method="true" symbol="onTimerPause"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry field="true" id="21" symbol="mTimerRunning"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="29" symbol="slope_label"/>
+<entry field="true" id="41" symbol="lapTime"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="17" method="true" symbol="dotMatrices"/>
+<entry id="12" object="true" symbol="customdatafieldApp"/>
+<entry field="true" id="35" symbol="lapDistance"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry field="true" id="8389067" symbol="height"/>
+<entry id="24" module="true" symbol="Menus"/>
+<entry id="59" method="true" symbol="KalmanPosVel"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="20" symbol="mCurrentRunningPower"/>
+<entry field="true" id="8388738" symbol="currentSpeed"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="26" object="true" symbol="frameDrawable"/>
+<entry id="8389137" method="true" symbol="compute"/>
+<entry id="13" object="true" symbol="RunningPower"/>
+<entry id="8389936" symbol="nativeNum"/>
+<entry field="true" id="8388742" symbol="currentPower"/>
+<entry id="8389131" method="true" symbol="setColor"/>
+<entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+<entry field="true" id="47" symbol="kalmanvel_z"/>
+<entry id="8390685" method="true" symbol="onWorkoutStepComplete"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry field="true" id="36" symbol="elapsedEnergy"/>
+<entry field="true" id="42" symbol="lapPower"/>
+<entry field="true" id="44" symbol="hrValue"/>
+<entry id="8389752" method="true" symbol="onTimerReset"/>
+<entry id="22" method="true" symbol="setTimerRunning"/>
+<entry field="true" id="40" symbol="lastComputeTime"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="34" symbol="lapStartDistance"/>
+<entry field="true" id="45" symbol="runningPower"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="58" symbol="m22"/>
+<entry field="true" id="56" symbol="m21"/>
+<entry field="true" id="57" symbol="m12"/>
+<entry field="true" id="55" symbol="m11"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="46" symbol="mFitContributor"/>
+<entry field="true" id="8389130" symbol="mColor"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="39" symbol="lapStartTime"/>
+<entry field="true" id="25" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry field="true" id="30" symbol="running_power_units"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="14" object="true" symbol="VerticalState"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="49" symbol="timeslice"/>
+<entry id="8390146" module="true" object="true" symbol="Background"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389780" module="true" object="true" symbol="FitContributor"/>
+<entry id="16" method="true" symbol="addMatrices"/>
+<entry id="8388641" module="true" symbol="Math"/>
+<entry id="19" method="true" symbol="getMatrixInverse"/>
+<entry id="8389751" method="true" symbol="onTimerLap"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389847" symbol="mesgType"/>
+<entry id="8389347" symbol="color"/>
+<entry field="true" id="8388732" symbol="elapsedTime"/>
+<entry id="10" object="true" symbol="Matrix"/>
+<entry id="18" method="true" symbol="transposeMatrix"/>
+<entry field="true" id="8388734" symbol="elapsedDistance"/>
+<entry id="23" module="true" symbol="Layouts"/>
+<entry field="true" id="48" symbol="R11"/>
+<entry id="8389750" method="true" symbol="onTimerResume"/>
+<entry field="true" id="50" symbol="var_acc"/>
+<entry field="true" id="38" symbol="lapEnergy"/>
+<entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+<entry field="true" id="33" symbol="currentVerticalState"/>
+<entry id="8390514" method="true" symbol="update"/>
+<entry id="9" object="true" symbol="KalmanFilter"/>
+<entry field="true" id="8388743" symbol="averagePower"/>
+<entry field="true" id="31" symbol="running_power_label"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435500" name="dictionary" stackId="1" startPc="268435460"/>
+<entry arg="true" endPc="268435516" name="color" stackId="1" startPc="268435502"/>
+<entry arg="true" endPc="268435565" name="dc" stackId="1" startPc="268435517"/>
+<entry arg="true" endPc="268435686" name="dataField" stackId="1" startPc="268435566"/>
+<entry arg="true" endPc="268435741" name="sensor" stackId="1" startPc="268435687"/>
+<entry arg="true" endPc="268435756" name="state" stackId="1" startPc="268435742"/>
+<entry arg="true" endPc="268436063" name="v0" stackId="2" startPc="268435767"/>
+<entry arg="true" endPc="268436063" name="x0" stackId="1" startPc="268435767"/>
+<entry arg="true" endPc="268436063" name="dt" stackId="3" startPc="268435767"/>
+<entry arg="true" endPc="268436063" name="meas_noise_var" stackId="4" startPc="268435767"/>
+<entry arg="true" endPc="268436063" name="process_var" stackId="5" startPc="268435767"/>
+<entry endPc="268436365" name="opt" stackId="4" startPc="268436068"/>
+<entry endPc="268436365" name="ic" stackId="10" startPc="268436068"/>
+<entry endPc="268436365" name="ps2" stackId="3" startPc="268436068"/>
+<entry endPc="268436365" name="ps1" stackId="2" startPc="268436068"/>
+<entry endPc="268436365" name="kg2" stackId="12" startPc="268436068"/>
+<entry endPc="268436365" name="kg1" stackId="11" startPc="268436068"/>
+<entry endPc="268436365" name="pp22" stackId="8" startPc="268436068"/>
+<entry endPc="268436365" name="pp21" stackId="7" startPc="268436068"/>
+<entry endPc="268436365" name="inn" stackId="9" startPc="268436068"/>
+<entry endPc="268436365" name="pp12" stackId="6" startPc="268436068"/>
+<entry endPc="268436365" name="pp11" stackId="5" startPc="268436068"/>
+<entry arg="true" endPc="268436366" name="baro_height" stackId="1" startPc="268436064"/>
+<entry arg="true" endPc="268436478" name="m" stackId="1" startPc="268436367"/>
+<entry arg="true" endPc="268436478" name="n" stackId="2" startPc="268436367"/>
+<entry arg="true" endPc="268436662" name="m" stackId="1" startPc="268436479"/>
+<entry arg="true" endPc="268436662" name="n" stackId="2" startPc="268436479"/>
+<entry arg="true" endPc="268436738" name="m" stackId="1" startPc="268436663"/>
+<entry endPc="268436874" name="determinant" stackId="2" startPc="268436743"/>
+<entry arg="true" endPc="268436875" name="m" stackId="1" startPc="268436739"/>
+<entry arg="true" endPc="268437650" name="info" stackId="1" startPc="268436964"/>
+<entry endPc="268439074" name="timerValueMinutes" stackId="17" startPc="268438783"/>
+<entry endPc="268439074" name="timerValueSeconds" stackId="18" startPc="268438783"/>
+<entry endPc="268439074" name="timerValueHours" stackId="16" startPc="268438783"/>
+<entry endPc="268439518" name="powerText" stackId="19" startPc="268437725"/>
+<entry endPc="268439518" name="backgroundColor" stackId="4" startPc="268437725"/>
+<entry endPc="268439518" name="valueSize" stackId="7" startPc="268437725"/>
+<entry endPc="268439518" name="distanceValue" stackId="10" startPc="268437725"/>
+<entry endPc="268439518" name="distanceUnit" stackId="11" startPc="268437725"/>
+<entry endPc="268439518" name="labelSize" stackId="8" startPc="268437725"/>
+<entry endPc="268439518" name="distanceYPosition" stackId="9" startPc="268437725"/>
+<entry endPc="268439518" name="seconds" stackId="15" startPc="268437725"/>
+<entry endPc="268439518" name="timeText" stackId="14" startPc="268437725"/>
+<entry endPc="268439518" name="height" stackId="3" startPc="268437725"/>
+<entry endPc="268439518" name="avgPowerText" stackId="21" startPc="268437725"/>
+<entry endPc="268439518" name="distanceLabelX" stackId="12" startPc="268437725"/>
+<entry endPc="268439518" name="valueColor" stackId="5" startPc="268437725"/>
+<entry endPc="268439518" name="width" stackId="2" startPc="268437725"/>
+<entry endPc="268439518" name="lapPowerText" stackId="20" startPc="268437725"/>
+<entry endPc="268439518" name="hrText" stackId="22" startPc="268437725"/>
+<entry endPc="268439518" name="labelColor" stackId="6" startPc="268437725"/>
+<entry endPc="268439518" name="distanceXPosition" stackId="13" startPc="268437725"/>
+<entry arg="true" endPc="268439519" name="dc" stackId="1" startPc="268437721"/>
+<entry arg="true" endPc="268439647" name="state" stackId="1" startPc="268439643"/>
+<entry arg="true" endPc="268439652" name="state" stackId="1" startPc="268439648"/>
+<entry endPc="268439757" name="pace_adjustment" stackId="3" startPc="268439699"/>
+<entry endPc="268439757" name="runningresistance" stackId="4" startPc="268439699"/>
+<entry arg="true" endPc="268439758" name="speed" stackId="1" startPc="268439695"/>
+<entry arg="true" endPc="268439758" name="currentSlope" stackId="2" startPc="268439695"/>
+<entry arg="true" endPc="268439806" name="y0" stackId="1" startPc="268439762"/>
+<entry arg="true" endPc="268439831" name="raw_altitude" stackId="1" startPc="268439807"/>
+<entry endPc="268440257" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268439865"/>
+<entry arg="true" endPc="268440258" name="dc" stackId="1" startPc="268439861"/>
+<entry endPc="268441982" name="rez_cmp_local_text_DistanceValue" stackId="5" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_TimeLabel" stackId="6" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_TimeValue" stackId="7" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_PaceLabel" stackId="8" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_custom_drawable_14311107312010349536" stackId="3" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_PaceValue" stackId="9" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_CadenceLabel" stackId="10" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_CadenceValue" stackId="11" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_custom_drawable_frameDrawable" stackId="4" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_AvgPaceLabel" stackId="12" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_HRLabel" stackId="14" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_AvgPaceValue" stackId="13" startPc="268440271"/>
+<entry endPc="268441982" name="rez_cmp_local_text_HRValue" stackId="15" startPc="268440271"/>
+<entry arg="true" endPc="268441983" name="dc" stackId="1" startPc="268440259"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="slope_units"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="slope_label"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="running_power_units"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="running_power_label"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/RunningPower" offset="198" parentId="globals" symbolId="RunningPower" type="class"/>
+<dataEntry label="globals/Matrix" offset="253" parentId="globals" symbolId="Matrix" type="class"/>
+<dataEntry label="globals/FitContributor" offset="332" parentId="globals" symbolId="FitContributor" type="class"/>
+<dataEntry label="globals/Rez" offset="427" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="506" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Drawables/frameDrawable" offset="553" parentId="Drawables" symbolId="frameDrawable" type="class"/>
+<dataEntry label="globals/Rez/Menus" offset="608" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="639" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="670" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="709" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="740" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/VerticalState" offset="811" parentId="globals" symbolId="VerticalState" type="class"/>
+<dataEntry label="globals/customdatafieldView" offset="866" parentId="globals" symbolId="customdatafieldView" type="class"/>
+<dataEntry label="globals/customdatafieldApp" offset="1129" parentId="globals" symbolId="customdatafieldApp" type="class"/>
+<dataEntry label="globals/KalmanFilter" offset="1200" parentId="globals" symbolId="KalmanFilter" type="class"/>
+<dataEntry label="globals/Background" offset="1359" parentId="globals" symbolId="Background" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435501" name="initialize" parent="Background" startPc="268435456">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435516" name="setColor" parent="Background" startPc="268435502">
+<param id="color"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435565" name="draw" parent="Background" startPc="268435517">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442113" name="&lt;init&gt;" parent="Background" startPc="268442095">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435686" name="initialize" parent="FitContributor" startPc="268435566">
+<param id="dataField"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435741" name="compute" parent="FitContributor" startPc="268435687">
+<param id="sensor"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435756" name="setTimerRunning" parent="FitContributor" startPc="268435742">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435761" name="onTimerLap" parent="FitContributor" startPc="268435757">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435766" name="onTimerReset" parent="FitContributor" startPc="268435762">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268441987" name="&lt;init&gt;" parent="FitContributor" startPc="268441987">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436063" name="initialize" parent="KalmanFilter" startPc="268435767">
+<param id="x0"/>
+<param id="v0"/>
+<param id="dt"/>
+<param id="meas_noise_var"/>
+<param id="process_var"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436366" name="KalmanPosVel" parent="KalmanFilter" startPc="268436064">
+<param id="baro_height"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442094" name="&lt;init&gt;" parent="KalmanFilter" startPc="268442094">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436478" name="addMatrices" parent="Matrix" startPc="268436367">
+<param id="m"/>
+<param id="n"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436662" name="dotMatrices" parent="Matrix" startPc="268436479">
+<param id="m"/>
+<param id="n"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436738" name="transposeMatrix" parent="Matrix" startPc="268436663">
+<param id="m"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436875" name="getMatrixInverse" parent="Matrix" startPc="268436739">
+<param id="m"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268441986" name="&lt;init&gt;" parent="Matrix" startPc="268441986">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436878" name="initialize" parent="Matrix" startPc="268436876">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436963" name="initialize" parent="customdatafieldView" startPc="268436879">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437650" name="compute" parent="customdatafieldView" startPc="268436964">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437703" name="onTimerLap" parent="customdatafieldView" startPc="268437651">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437720" name="onWorkoutStepComplete" parent="customdatafieldView" startPc="268437704">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439519" name="onUpdate" parent="customdatafieldView" startPc="268437721">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439544" name="onTimerStart" parent="customdatafieldView" startPc="268439520">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439569" name="onTimerStop" parent="customdatafieldView" startPc="268439545">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439594" name="onTimerPause" parent="customdatafieldView" startPc="268439570">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439619" name="onTimerResume" parent="customdatafieldView" startPc="268439595">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442074" name="&lt;init&gt;" parent="customdatafieldView" startPc="268442056">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439642" name="initialize" parent="customdatafieldApp" startPc="268439620">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439647" name="onStart" parent="customdatafieldApp" startPc="268439643">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439652" name="onStop" parent="customdatafieldApp" startPc="268439648">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439694" name="getInitialView" parent="customdatafieldApp" startPc="268439653">
+<documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442093" name="&lt;init&gt;" parent="customdatafieldApp" startPc="268442075">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439758" name="Strava" parent="RunningPower" startPc="268439695">
+<param id="speed"/>
+<param id="currentSlope"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268441985" name="&lt;init&gt;" parent="RunningPower" startPc="268441985">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439761" name="initialize" parent="RunningPower" startPc="268439759">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439806" name="initialize" parent="VerticalState" startPc="268439762">
+<param id="y0"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439831" name="update" parent="VerticalState" startPc="268439807">
+<param id="raw_altitude"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442055" name="&lt;init&gt;" parent="VerticalState" startPc="268442037">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439860" name="initialize" parent="frameDrawable" startPc="268439832">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440258" name="draw" parent="frameDrawable" startPc="268439861">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442031" name="&lt;init&gt;" parent="frameDrawable" startPc="268442013">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442012" name="&lt;init&gt;" parent="Drawables" startPc="268442012">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442033" name="&lt;init&gt;" parent="Fonts" startPc="268442033">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442035" name="&lt;init&gt;" parent="JsonData" startPc="268442035">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268441983" name="MainLayout" parent="Layouts" startPc="268440259">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442034" name="&lt;init&gt;" parent="Layouts" startPc="268442034">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442032" name="&lt;init&gt;" parent="Menus" startPc="268442032">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442036" name="&lt;init&gt;" parent="Strings" startPc="268442036">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268442011" name="&lt;init&gt;" parent="Rez" startPc="268441988">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
