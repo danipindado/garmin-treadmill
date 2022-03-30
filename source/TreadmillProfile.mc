@@ -37,6 +37,11 @@ class TreadmillProfile
     var writeBusy = false;
     
     
+	hidden function debug(str) 
+    {
+		System.println("[ble] " + str);
+	}
+
 
 	public function wordToUuid(uuid)
 	{
@@ -44,7 +49,7 @@ class TreadmillProfile
 		return Ble.longToUuid(0x0000000000001000l + ((uuid & 0xffff).toLong() << 32), 0x800000805f9b34fbl);
 	}
     
-    
+    hidden const DEVICE_NAME = "Domyos-TC-0751";
 	public const FITNESS_MACHINE_SERVICE 	   			= wordToUuid(0x1826);
 	public const TREADMILL_DATA_CHARACTERISTIC 			= wordToUuid(0x2acd);
 	public const FITNESS_MACHINE_FEATURE_CHARACTERISTIC = wordToUuid(0x2acc);
@@ -272,24 +277,32 @@ class TreadmillProfile
 	{
 		System.println("BleDelegate.onScanResults");
     	
-    	//var rssi = scanResults.getRssi();
+		var name; //appearance, name, rssi, mfg, uuids, service;
     	
     	for( var result = scanResults.next(); result != null; result = scanResults.next() ) 
         {
             if( contains( result.getServiceUuids(), scanForUuid ) ) 
-            {
-            
-            		
-        		 Ble.setScanState( Ble.SCAN_STATE_OFF );
-    			var d = Ble.pairDevice( result );
+            {            		
+                // appearance = result.getAppearance();
+                name = result.getDeviceName();
+                // rssi = result.getRssi();
+                // mfg = result.getManufacturerSpecificDataIterator();
+                // uuids = result.getServiceUuids();
+    			debug("name: " + name);
+
+                if (name != null && name.equals(DEVICE_NAME)) 
+                {
+        		    Ble.setScanState( Ble.SCAN_STATE_OFF );
+    			    var d = Ble.pairDevice( result );
+                }
+
             }
         }
     
 	}
 	function onDescriptorWrite(descriptor, status) 
     {
-       
-       
+
     }
 	
 	

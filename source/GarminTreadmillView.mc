@@ -3,13 +3,15 @@ using Toybox.Graphics as Gfx;
 
 class GarminTreadmillView extends Ui.DataField {
 
+	hidden var _bleDevice;
 	hidden var elapsedTime = 0; 
     hidden var lastComputeTime = 0;
-    var mFitContributor;
+    var _fitContributor;
 
-    function initialize() {
+    function initialize(device) {
         DataField.initialize();
-        mFitContributor = new FitContributor(self);
+        _bleDevice = device;
+        _fitContributor = new FitContributor(self);
     }
             
     // The given info object contains all the current workout information.
@@ -23,8 +25,8 @@ class GarminTreadmillView extends Ui.DataField {
         if(elapsedTime != lastComputeTime)
         {
             lastComputeTime = elapsedTime;
-            // mFitContributor.compute([currentPower]);
-            mFitContributor.compute([0.0]);
+            // _fitContributor.compute([currentPower]);
+            _fitContributor.compute([0.0]);
         }
         // System.println("currentPower: " + currentPower);
         // System.println("lapPower: " + lapPower);
@@ -133,19 +135,19 @@ class GarminTreadmillView extends Ui.DataField {
     }
 
     function onTimerStart() {
-        mFitContributor.setTimerRunning( true );
+        _fitContributor.setTimerRunning( true );
     }
 
     function onTimerStop() {
-        mFitContributor.setTimerRunning( false );
+        _fitContributor.setTimerRunning( false );
     }
 
     function onTimerPause() {
-        mFitContributor.setTimerRunning( false );
+        _fitContributor.setTimerRunning( false );
     }
 
     function onTimerResume() {
-        mFitContributor.setTimerRunning( true );
+        _fitContributor.setTimerRunning( true );
     }    
 
 }
