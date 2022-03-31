@@ -280,7 +280,7 @@ class TreadmillProfile
                 // rssi = result.getRssi();
                 // mfg = result.getManufacturerSpecificDataIterator();
                 // uuids = result.getServiceUuids();
-                debug("name: " + name);
+                System.println("name: " + name);
 
                 if (name != null && name.equals(DEVICE_NAME)) 
                 {
