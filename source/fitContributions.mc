@@ -13,7 +13,6 @@ class FitContributor {
     hidden var mCurrentRunningPower = null;
     var mTimerRunning = false;
     
-
     // Constructor
     function initialize(dataField) {
         mCurrentRunningPower = dataField.createField("RunningPower", 1, Fit.DATA_TYPE_SINT16, { :nativeNum=>7, :mesgType=>Fit.MESG_TYPE_RECORD, :units=>"W" });

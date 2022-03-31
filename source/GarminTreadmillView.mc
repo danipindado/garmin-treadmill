@@ -3,8 +3,8 @@ using Toybox.Graphics as Gfx;
 
 class GarminTreadmillView extends Ui.DataField {
 
-	hidden var _bleDevice;
-	hidden var elapsedTime = 0; 
+    hidden var _bleDevice;
+    hidden var elapsedTime = 0; 
     hidden var lastComputeTime = 0;
     var _fitContributor;
 
@@ -39,7 +39,7 @@ class GarminTreadmillView extends Ui.DataField {
     }
     
     function onTimerLap(){
-    	// lapStartDistance = elapsedDistance;
+        // lapStartDistance = elapsedDistance;
     }
 
     function onWorkoutStepComplete()
@@ -50,18 +50,18 @@ class GarminTreadmillView extends Ui.DataField {
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
     function onUpdate(dc) {
-    	
-    	var width = dc.getWidth();
-    	var height = dc.getHeight();
-    	
-    	var backgroundColor = getBackgroundColor();
-    	var valueColor = backgroundColor == Graphics.COLOR_WHITE ? Graphics.COLOR_BLACK : Graphics.COLOR_WHITE;
-    	var labelColor = backgroundColor == Graphics.COLOR_WHITE ? Graphics.COLOR_DK_GRAY : Graphics.COLOR_LT_GRAY;
-    	var valueSize = Graphics.FONT_LARGE;
-    	var labelSize = Graphics.FONT_TINY;
-    	
-    	var distanceYPosition = (height > 214) ? height * .04 : height * .03;
-    	
+        
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        
+        var backgroundColor = getBackgroundColor();
+        var valueColor = backgroundColor == Graphics.COLOR_WHITE ? Graphics.COLOR_BLACK : Graphics.COLOR_WHITE;
+        var labelColor = backgroundColor == Graphics.COLOR_WHITE ? Graphics.COLOR_DK_GRAY : Graphics.COLOR_LT_GRAY;
+        var valueSize = Graphics.FONT_LARGE;
+        var labelSize = Graphics.FONT_TINY;
+        
+        var distanceYPosition = (height > 214) ? height * .04 : height * .03;
+        
         // Set the background color
         dc.setColor(backgroundColor, backgroundColor);
         dc.fillRectangle(0, 0, width, height);
@@ -78,7 +78,7 @@ class GarminTreadmillView extends Ui.DataField {
         // var distanceUnit = "km";
         // if(System.getDeviceSettings().distanceUnits == System.UNIT_STATUTE)
         // {
-        // 	distanceValue = elapsedDistance * 0.000621371;
+        //     distanceValue = elapsedDistance * 0.000621371;
         //     distanceUnit = "mi";
         // }
         
@@ -97,7 +97,6 @@ class GarminTreadmillView extends Ui.DataField {
         
         dc.setColor(valueColor, Graphics.COLOR_TRANSPARENT);
                 
-        
         var tmp = 10.0;
         
         var distanceText;
@@ -109,28 +108,28 @@ class GarminTreadmillView extends Ui.DataField {
         dc.drawText(width * .25, height * .31, Graphics.FONT_MEDIUM, timeText, Graphics.TEXT_JUSTIFY_CENTER);
         
         var powerText;
-  		    
+              
         if (tmp == 0) {
-        	powerText = "--";
+            powerText = "--";
         } else {
-        	powerText = tmp.format("%d");
-		}
+            powerText = tmp.format("%d");
+        }
         
         dc.drawText(width * .75, height * .315, valueSize, powerText, Graphics.TEXT_JUSTIFY_CENTER);
         //System.println("power: " + currentPower);
 
-		var lapPowerText;
-        lapPowerText = tmp.format("%d");		
-		dc.drawText(width * .75, height * .615, valueSize, lapPowerText, Graphics.TEXT_JUSTIFY_CENTER);
+        var lapPowerText;
+        lapPowerText = tmp.format("%d");        
+        dc.drawText(width * .75, height * .615, valueSize, lapPowerText, Graphics.TEXT_JUSTIFY_CENTER);
         
         var avgPowerText;
-        avgPowerText = tmp.format("%d");		
-		dc.drawText(width * .25, height * .615, valueSize, avgPowerText, Graphics.TEXT_JUSTIFY_CENTER);
-		// System.println("Avg. Power " + averagePower);
-		
-		var hrText;
-        hrText = tmp.format("%d");		
-		dc.drawText(width / 2, height * .82, valueSize, hrText, Graphics.TEXT_JUSTIFY_CENTER);
+        avgPowerText = tmp.format("%d");        
+        dc.drawText(width * .25, height * .615, valueSize, avgPowerText, Graphics.TEXT_JUSTIFY_CENTER);
+        // System.println("Avg. Power " + averagePower);
+        
+        var hrText;
+        hrText = tmp.format("%d");        
+        dc.drawText(width / 2, height * .82, valueSize, hrText, Graphics.TEXT_JUSTIFY_CENTER);
 
     }
 

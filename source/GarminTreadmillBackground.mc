@@ -22,5 +22,4 @@ class Background extends Ui.Drawable {
         dc.setColor(Gfx.COLOR_TRANSPARENT, mColor);
         dc.clear();
     }
-
 }
