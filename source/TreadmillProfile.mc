@@ -110,7 +110,7 @@ class TreadmillProfile
         System.println("Unpaired");
     }
     
-    function scanFor (serviceToScanFor)
+    function scanFor(serviceToScanFor)
     {
         
         System.println("ScanMenuDelegate.starting scan");
@@ -118,7 +118,7 @@ class TreadmillProfile
         Ble.setScanState(Ble.SCAN_STATE_SCANNING);
     }
 
-    function initialize ()
+    function initialize()
     {
         System.println("initialize");
         Ble.registerProfile(_fitnessProfileDef);
@@ -269,28 +269,16 @@ class TreadmillProfile
         return false;
     }
 
-    function onScanResults (scanResults)
+    function onScanResults(scanResults)
     {
         System.println("TreadmillProfile.onScanResults");
         
-        var name; //appearance, name, rssi, mfg, uuids, service;
-        
-        for(var result = scanResults.next(); result != null; result = scanResults.next()) 
+    	for( var result = scanResults.next(); result != null; result = scanResults.next()) 
         {
-            if(contains(result.getServiceUuids(), scanForUuid)) 
-            {                    
-                // appearance = result.getAppearance();
-                name = result.getDeviceName();
-                // rssi = result.getRssi();
-                // mfg = result.getManufacturerSpecificDataIterator();
-                // uuids = result.getServiceUuids();
-                System.println("name: " + name);
-
-                if (name != null && name.equals(DEVICE_NAME)) 
-                {
-                    Ble.setScanState(Ble.SCAN_STATE_OFF);
-                    var d = Ble.pairDevice(result);
-                }
+            if( contains(result.getServiceUuids(), scanForUuid)) 
+            {            		
+        		 Ble.setScanState(Ble.SCAN_STATE_OFF);
+    			var d = Ble.pairDevice(result);
             }
         }
     }
