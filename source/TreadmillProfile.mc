@@ -88,7 +88,7 @@ class TreadmillProfile
     }
     private const _fitnessProfileDef = 
     {
-        :uuid => FITNESS_MACHINE_SERVICE,                
+        :uuid => FITNESS_MACHINE_SERVICE,
         :characteristics => [
         {
             :uuid => TREADMILL_DATA_CHARACTERISTIC,:descriptors => [Ble.cccdUuid()]
@@ -105,7 +105,7 @@ class TreadmillProfile
  
     function unpair() 
     {
-        Ble.unpairDevice( _device );
+        Ble.unpairDevice(_device);
         _device = null;
         System.println("Unpaired");
     }
@@ -115,20 +115,22 @@ class TreadmillProfile
         
         System.println("ScanMenuDelegate.starting scan");
         scanForUuid = serviceToScanFor;
-        Ble.setScanState( Ble.SCAN_STATE_SCANNING );
+        Ble.setScanState(Ble.SCAN_STATE_SCANNING);
     }
 
     function initialize ()
     {
-      Ble.registerProfile( _fitnessProfileDef );
-      _bleDelegate = new TreadmillDelegate(self);  //pass it this
-      Ble.setDelegate( _bleDelegate );
+        System.println("initialize");
+        Ble.registerProfile(_fitnessProfileDef);
+        _bleDelegate = new TreadmillDelegate(self);  //pass it this
+        Ble.setDelegate(_bleDelegate);
      
     }
     
     private function activateNextNotification() 
     {
-        var service = _device.getService(_parent.FITNESS_MACHINE_SERVICE );    
+        System.println("TreadmillProfile.activateNextNotification");
+        var service = _device.getService(_parent.FITNESS_MACHINE_SERVICE);    
         var characteristic = service.getCharacteristic(_parent.TREADMILL_DATA_CHARACTERISTIC);
         var cccd = characteristic.getDescriptor(Ble.cccdUuid());
         cccd.requestWrite([0x01, 0x00]b);
@@ -146,7 +148,7 @@ class TreadmillProfile
         if (stack.size() == 0) {return;} // nothing to do
         if (writeBusy == true) {return;}// already busy.  nothing to do
         
-        var characteristic = _device.getService(FITNESS_MACHINE_SERVICE ).getCharacteristic(TREADMILL_CONTROL_POINT);
+        var characteristic = _device.getService(FITNESS_MACHINE_SERVICE).getCharacteristic(TREADMILL_CONTROL_POINT);
         try
         {
             writeBusy = true;
@@ -162,6 +164,7 @@ class TreadmillProfile
 
     function onCharacteristicWrite(char, value)    //called after write is complete
     {
+        System.println("TreadmillProfile.onCharacteristicWrite");
         System.println("**callback characteristic Write.  SI: " + stack.size() + "Characteristic: " + char + ".  Value: " + value);
         if (stack.size() == 0) 
         {
@@ -192,23 +195,23 @@ class TreadmillProfile
         
         if (cu.equals(TREADMILL_DATA_CHARACTERISTIC))
         {
-            _rawSpeed = value.decodeNumber( Lang.NUMBER_FORMAT_UINT16, { :offset => _speedOffset });
+            _rawSpeed = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _speedOffset });
             _speed = _rawSpeed / 100.0f * 0.621371192f;
-            _rawIncline = value.decodeNumber( Lang.NUMBER_FORMAT_UINT16, { :offset => _inclineOffset });
+            _rawIncline = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _inclineOffset });
             _incline = _rawIncline / 10.0f;
             
-            var temp = value.decodeNumber( Lang.NUMBER_FORMAT_UINT32, { :offset => _totalDistanceOffset });
+            var temp = value.decodeNumber(Lang.NUMBER_FORMAT_UINT32, { :offset => _totalDistanceOffset });
             temp = temp & 0x00ffffff;
             _totalDistance = temp  *  0.000621371f;
-            _elevationGain = value.decodeNumber( Lang.NUMBER_FORMAT_UINT16, { :offset => _positiveElevationGainOffset }) / 10.0f * 3.28084f ;
-            //_totalEnergy   = value.decodeNumber( Lang.NUMBER_FORMAT_UINT16, { :offset => _totalEnergyOffset }) / 10;
+            _elevationGain = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _positiveElevationGainOffset }) / 10.0f * 3.28084f ;
+            //_totalEnergy   = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _totalEnergyOffset }) / 10;
             //System.println(_totalEnergy);
             WatchUi.requestUpdate();
              
         }
     }
     
-    function setSpeed ( speed )
+    function setSpeed (speed)
     {
         if (speed < 0) {speed = 0;}
         if (speed > 12) {speed = 12;}
@@ -221,7 +224,7 @@ class TreadmillProfile
         pushWrite(b1);
     }
 
-    function setIncline ( incline )
+    function setIncline (incline)
     {
         var incl = incline * 10.0;
         var long1 = incl.toLong();//convert to kph and multiply by one humdred
@@ -232,15 +235,16 @@ class TreadmillProfile
            pushWrite(b1);
     }
     
-    function onConnectedStateChanged( device, state )
+    function onConnectedStateChanged(device, state)
     {
+        System.println("TreadmillProfile.onConnectedStateChanged");
         if (state == Ble.CONNECTION_STATE_CONNECTED)
         {
             _isConnected = true;
             WatchUi.requestUpdate();
             _device = device;
-            System.println("BleDelegate.onConnectedStateChanged");
-            var service = device.getService(FITNESS_MACHINE_SERVICE );
+            System.println("CONNECTION_STATE_CONNECTED");
+            var service = device.getService(FITNESS_MACHINE_SERVICE);
             
             var characteristic = service.getCharacteristic(TREADMILL_DATA_CHARACTERISTIC);
             var cccd = characteristic.getDescriptor(Ble.cccdUuid());
@@ -249,15 +253,15 @@ class TreadmillProfile
         if (state == Ble.CONNECTION_STATE_DISCONNECTED)
         {
             _isConnected = false;
-            System.println("Disconnected");
+            System.println("CONNECTION_STATE_DISCONNECTED");
         }
     }
     
-    private function contains( iter, obj ) 
+    private function contains(iter, obj) 
     {
-        for( var uuid = iter.next(); uuid != null; uuid = iter.next() ) 
+        for(var uuid = iter.next(); uuid != null; uuid = iter.next()) 
         {
-            if( uuid.equals( obj ) ) 
+            if(uuid.equals(obj)) 
             {
                 return true;
             }
@@ -267,13 +271,13 @@ class TreadmillProfile
 
     function onScanResults (scanResults)
     {
-        System.println("BleDelegate.onScanResults");
+        System.println("TreadmillProfile.onScanResults");
         
         var name; //appearance, name, rssi, mfg, uuids, service;
         
-        for( var result = scanResults.next(); result != null; result = scanResults.next() ) 
+        for(var result = scanResults.next(); result != null; result = scanResults.next()) 
         {
-            if( contains( result.getServiceUuids(), scanForUuid ) ) 
+            if(contains(result.getServiceUuids(), scanForUuid)) 
             {                    
                 // appearance = result.getAppearance();
                 name = result.getDeviceName();
@@ -284,8 +288,8 @@ class TreadmillProfile
 
                 if (name != null && name.equals(DEVICE_NAME)) 
                 {
-                    Ble.setScanState( Ble.SCAN_STATE_OFF );
-                    var d = Ble.pairDevice( result );
+                    Ble.setScanState(Ble.SCAN_STATE_OFF);
+                    var d = Ble.pairDevice(result);
                 }
             }
         }
@@ -300,9 +304,9 @@ class TreadmillProfile
     
 function onDescriptorWrite(descriptor, status) 
     {
-        if( Ble.cccdUuid().equals( descriptor.getUuid() ) ) 
+        if(Ble.cccdUuid().equals(descriptor.getUuid())) 
         {
-            processCccdWrite( status );
+            processCccdWrite(status);
         }
         else
         {
@@ -310,11 +314,11 @@ function onDescriptorWrite(descriptor, status)
         }
     }
 
-    private function processCccdWrite( status ) 
+    private function processCccdWrite(status) 
     {
-        if( _pendingNotifies.size() > 1 ) 
+        if(_pendingNotifies.size() > 1) 
         {
-            _pendingNotifies = _pendingNotifies.slice(1,_pendingNotifies.size() );
+            _pendingNotifies = _pendingNotifies.slice(1,_pendingNotifies.size());
             activateNextNotification();
         }
         else {
@@ -337,23 +341,25 @@ class TreadmillDelegate extends Ble.BleDelegate
     
     var _parent = null;
     
-    function initialize(parent  ) 
+    function initialize(parent) 
     {
         BleDelegate.initialize();
         _parent = parent;
         System.println("BleDelegate.initialize");
     }
     
-    function onScanResults( scanResults ) 
+    function onScanResults(scanResults) 
     {
+        System.println("BleDelegate.onScanResults");
         if (_parent != null)
         {
             _parent.onScanResults(scanResults);
         }
     }
     
-    function onConnectedStateChanged( device, state ) 
+    function onConnectedStateChanged(device, state) 
     {
+        System.println("BleDelegate.onConnectedStateChanged");
         if (_parent != null)
         {
             _parent.onConnectedStateChanged(device, state);
@@ -362,6 +368,7 @@ class TreadmillDelegate extends Ble.BleDelegate
 
     function onCharacteristicChanged(char, value) 
     {
+        System.println("BleDelegate.onCharacteristicChanged");
         BleDelegate.onCharacteristicChanged(char, value);
         //System.println("**callback characteristic Changed");
         if (_parent != null)
@@ -372,8 +379,8 @@ class TreadmillDelegate extends Ble.BleDelegate
 
     function onCharacteristicRead(char, value) 
     {
+        System.println("BleDelegate.onCharacteristicRead");
         BleDelegate.onCharacteristicRead(char, value);
-        System.println("**callback characteristic Read");
         if (_parent != null)
         {
             _parent.onCharacteristicRead(char, value);
@@ -382,6 +389,7 @@ class TreadmillDelegate extends Ble.BleDelegate
 
     function onCharacteristicWrite(char, value) 
     {
+        System.println("BleDelegate.onCharacteristicWrite");
         BleDelegate.onCharacteristicChanged(char, value);
         
         if (_parent != null)
@@ -392,17 +400,16 @@ class TreadmillDelegate extends Ble.BleDelegate
 
     function onDescriptorWrite(descriptor, status) 
     {
-        System.println("**callback DESCRIPTOR write");
+        System.println("BleDelegate.onDescriptorWrite");
         if (_parent != null)
-        {
-        
+        {        
             _parent.onDescriptorWrite(descriptor, status);
         }
     }
 
     function onDescriptorRead(descriptor, status) 
     {
-        System.println("**callback DESCRIPTOR read");
+        System.println("BleDelegate.onDescriptorRead");
         var q = 42;
         
     }

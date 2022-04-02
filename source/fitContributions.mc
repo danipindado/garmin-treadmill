@@ -22,12 +22,12 @@ class FitContributor {
 
     function compute(sensor) 
     {
-        if( sensor != null ) 
+        if(sensor != null) 
         {
             // Hemoglobin Concentration is stored in 1/100ths g/dL fixed point
-            mCurrentRunningPower.setData( sensor[0] );
+            mCurrentRunningPower.setData(sensor[0]);
 
-            if( mTimerRunning ) 
+            if(mTimerRunning) 
             {
                 // Update lap/session data and record counts
 

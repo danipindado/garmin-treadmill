@@ -1,7 +1,7 @@
 <!DOCTYPE xml>
 
 <strings>
-    <string id="AppName">custom-data-field</string>
+    <string id="AppName">garmin-treadmill</string>
     <string id="running_power_label">Running Power</string>
     <string id="running_power_units">W</string> 
     <string id="slope_label">slope</string>

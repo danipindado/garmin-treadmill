@@ -3,14 +3,15 @@ using Toybox.Graphics as Gfx;
 
 class GarminTreadmillView extends Ui.DataField {
 
-    hidden var _bleDevice;
+    hidden var _treadmillProfile;
     hidden var elapsedTime = 0; 
     hidden var lastComputeTime = 0;
     var _fitContributor;
 
-    function initialize(device) {
+    function initialize() {
         DataField.initialize();
-        _bleDevice = device;
+        _treadmillProfile = new TreadmillProfile();
+        _treadmillProfile.scanFor(_treadmillProfile.FITNESS_MACHINE_SERVICE);
         _fitContributor = new FitContributor(self);
     }
             
@@ -134,19 +135,19 @@ class GarminTreadmillView extends Ui.DataField {
     }
 
     function onTimerStart() {
-        _fitContributor.setTimerRunning( true );
+        _fitContributor.setTimerRunning(true);
     }
 
     function onTimerStop() {
-        _fitContributor.setTimerRunning( false );
+        _fitContributor.setTimerRunning(false);
     }
 
     function onTimerPause() {
-        _fitContributor.setTimerRunning( false );
+        _fitContributor.setTimerRunning(false);
     }
 
     function onTimerResume() {
-        _fitContributor.setTimerRunning( true );
+        _fitContributor.setTimerRunning(true);
     }    
 
 }
