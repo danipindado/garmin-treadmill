@@ -69,8 +69,8 @@
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillView.mc" id="8" lineNum="146" parent="globals/GarminTreadmillView" pc="268437003" symbol="onTimerPause"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillView.mc" id="9" lineNum="149" parent="globals/GarminTreadmillView" pc="268437024" symbol="onTimerResume"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillView.mc" id="9" lineNum="150" parent="globals/GarminTreadmillView" pc="268437028" symbol="onTimerResume"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillView.mc" id="10" lineNum="4" parent="globals/GarminTreadmillView" pc="268442590" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillView.mc" id="10" lineNum="4" parent="globals/GarminTreadmillView" pc="268442590" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillView.mc" id="10" lineNum="4" parent="globals/GarminTreadmillView" pc="268442333" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillView.mc" id="10" lineNum="4" parent="globals/GarminTreadmillView" pc="268442333" symbol="&lt;init&gt;"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="12" lineNum="9" parent="globals/Background" pc="268437049" symbol="initialize"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="12" lineNum="10" parent="globals/Background" pc="268437053" symbol="initialize"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="12" lineNum="14" parent="globals/Background" pc="268437074" symbol="initialize"/>
@@ -79,16 +79,16 @@
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="14" lineNum="21" parent="globals/Background" pc="268437110" symbol="draw"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="14" lineNum="22" parent="globals/Background" pc="268437114" symbol="draw"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="14" lineNum="23" parent="globals/Background" pc="268437146" symbol="draw"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="15" lineNum="5" parent="globals/Background" pc="268442571" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="15" lineNum="5" parent="globals/Background" pc="268442571" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="15" lineNum="5" parent="globals/Background" pc="268442314" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillBackground.mc" id="15" lineNum="5" parent="globals/Background" pc="268442314" symbol="&lt;init&gt;"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="17" lineNum="6" parent="globals/GarminTreadmillApp" pc="268437159" symbol="initialize"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="17" lineNum="7" parent="globals/GarminTreadmillApp" pc="268437163" symbol="initialize"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="18" lineNum="11" parent="globals/GarminTreadmillApp" pc="268437182" symbol="onStart"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="19" lineNum="15" parent="globals/GarminTreadmillApp" pc="268437187" symbol="onStop"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="20" lineNum="19" parent="globals/GarminTreadmillApp" pc="268437192" symbol="getInitialView"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="20" lineNum="20" parent="globals/GarminTreadmillApp" pc="268437196" symbol="getInitialView"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="21" lineNum="4" parent="globals/GarminTreadmillApp" pc="268442552" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="21" lineNum="4" parent="globals/GarminTreadmillApp" pc="268442552" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="21" lineNum="4" parent="globals/GarminTreadmillApp" pc="268442295" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\GarminTreadmillApp.mc" id="21" lineNum="4" parent="globals/GarminTreadmillApp" pc="268442295" symbol="&lt;init&gt;"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="23" lineNum="37" parent="globals/TreadmillProfile" pc="268437234" symbol="wordToUuid"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="23" lineNum="40" parent="globals/TreadmillProfile" pc="268437238" symbol="wordToUuid"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="24" lineNum="49" parent="globals/TreadmillProfile" pc="268437298" symbol="isConnected"/>
@@ -156,162 +156,155 @@
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="39" lineNum="186" parent="globals/TreadmillProfile" pc="268438346" symbol="onCharacteristicRead"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="39" lineNum="187" parent="globals/TreadmillProfile" pc="268438350" symbol="onCharacteristicRead"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="191" parent="globals/TreadmillProfile" pc="268438355" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="193" parent="globals/TreadmillProfile" pc="268438359" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="194" parent="globals/TreadmillProfile" pc="268438378" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="194" parent="globals/TreadmillProfile" pc="268438359" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="195" parent="globals/TreadmillProfile" pc="268438378" symbol="onCharacteristicChanged"/>
 <entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="196" parent="globals/TreadmillProfile" pc="268438391" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="198" parent="globals/TreadmillProfile" pc="268438413" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="199" parent="globals/TreadmillProfile" pc="268438466" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="200" parent="globals/TreadmillProfile" pc="268438494" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="201" parent="globals/TreadmillProfile" pc="268438547" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="203" parent="globals/TreadmillProfile" pc="268438569" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="204" parent="globals/TreadmillProfile" pc="268438616" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="205" parent="globals/TreadmillProfile" pc="268438626" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="206" parent="globals/TreadmillProfile" pc="268438642" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="209" parent="globals/TreadmillProfile" pc="268438707" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="214" parent="globals/TreadmillProfile" pc="268438727" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="216" parent="globals/TreadmillProfile" pc="268438731" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="216" parent="globals/TreadmillProfile" pc="268438742" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="217" parent="globals/TreadmillProfile" pc="268438752" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="217" parent="globals/TreadmillProfile" pc="268438763" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="218" parent="globals/TreadmillProfile" pc="268438773" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="219" parent="globals/TreadmillProfile" pc="268438783" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="220" parent="globals/TreadmillProfile" pc="268438796" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="221" parent="globals/TreadmillProfile" pc="268438843" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="223" parent="globals/TreadmillProfile" pc="268438908" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="224" parent="globals/TreadmillProfile" pc="268438931" symbol="setSpeed"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="227" parent="globals/TreadmillProfile" pc="268438946" symbol="setIncline"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="229" parent="globals/TreadmillProfile" pc="268438950" symbol="setIncline"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="230" parent="globals/TreadmillProfile" pc="268438960" symbol="setIncline"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="231" parent="globals/TreadmillProfile" pc="268438973" symbol="setIncline"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="232" parent="globals/TreadmillProfile" pc="268439020" symbol="setIncline"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="234" parent="globals/TreadmillProfile" pc="268439085" symbol="setIncline"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="235" parent="globals/TreadmillProfile" pc="268439108" symbol="setIncline"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="238" parent="globals/TreadmillProfile" pc="268439123" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="240" parent="globals/TreadmillProfile" pc="268439127" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="241" parent="globals/TreadmillProfile" pc="268439150" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="243" parent="globals/TreadmillProfile" pc="268439168" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="244" parent="globals/TreadmillProfile" pc="268439178" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="245" parent="globals/TreadmillProfile" pc="268439194" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="246" parent="globals/TreadmillProfile" pc="268439204" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="247" parent="globals/TreadmillProfile" pc="268439227" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="249" parent="globals/TreadmillProfile" pc="268439248" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="250" parent="globals/TreadmillProfile" pc="268439269" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="251" parent="globals/TreadmillProfile" pc="268439297" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="253" parent="globals/TreadmillProfile" pc="268439344" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="255" parent="globals/TreadmillProfile" pc="268439362" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="256" parent="globals/TreadmillProfile" pc="268439372" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="260" parent="globals/TreadmillProfile" pc="268439399" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="262" parent="globals/TreadmillProfile" pc="268439403" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="264" parent="globals/TreadmillProfile" pc="268439423" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="266" parent="globals/TreadmillProfile" pc="268439439" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="269" parent="globals/TreadmillProfile" pc="268439461" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="272" parent="globals/TreadmillProfile" pc="268439465" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="274" parent="globals/TreadmillProfile" pc="268439469" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="276" parent="globals/TreadmillProfile" pc="268439492" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="278" parent="globals/TreadmillProfile" pc="268439512" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="280" parent="globals/TreadmillProfile" pc="268439545" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="281" parent="globals/TreadmillProfile" pc="268439573" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="46" lineNum="286" parent="globals/TreadmillProfile" pc="268439612" symbol="onDescriptorWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="12" parent="globals/TreadmillProfile" pc="268442659" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="13" parent="globals/TreadmillProfile" pc="268442676" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="31" parent="globals/TreadmillProfile" pc="268442693" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="44" parent="globals/TreadmillProfile" pc="268442707" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="45" parent="globals/TreadmillProfile" pc="268442731" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="46" parent="globals/TreadmillProfile" pc="268442755" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="47" parent="globals/TreadmillProfile" pc="268442779" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="89" parent="globals/TreadmillProfile" pc="268442803" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="6" parent="globals/TreadmillProfile" pc="268442659" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="48" lineNum="332" parent="globals/TreadmillDelegate" pc="268439617" symbol="initialize"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="48" lineNum="334" parent="globals/TreadmillDelegate" pc="268439621" symbol="initialize"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="48" lineNum="335" parent="globals/TreadmillDelegate" pc="268439639" symbol="initialize"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="48" lineNum="336" parent="globals/TreadmillDelegate" pc="268439649" symbol="initialize"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="49" lineNum="339" parent="globals/TreadmillDelegate" pc="268439673" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="49" lineNum="341" parent="globals/TreadmillDelegate" pc="268439677" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="49" lineNum="342" parent="globals/TreadmillDelegate" pc="268439700" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="49" lineNum="344" parent="globals/TreadmillDelegate" pc="268439713" symbol="onScanResults"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="50" lineNum="348" parent="globals/TreadmillDelegate" pc="268439737" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="50" lineNum="350" parent="globals/TreadmillDelegate" pc="268439741" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="50" lineNum="351" parent="globals/TreadmillDelegate" pc="268439764" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="50" lineNum="353" parent="globals/TreadmillDelegate" pc="268439777" symbol="onConnectedStateChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="357" parent="globals/TreadmillDelegate" pc="268439803" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="359" parent="globals/TreadmillDelegate" pc="268439807" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="360" parent="globals/TreadmillDelegate" pc="268439830" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="362" parent="globals/TreadmillDelegate" pc="268439852" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="364" parent="globals/TreadmillDelegate" pc="268439865" symbol="onCharacteristicChanged"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="368" parent="globals/TreadmillDelegate" pc="268439891" symbol="onCharacteristicRead"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="370" parent="globals/TreadmillDelegate" pc="268439895" symbol="onCharacteristicRead"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="371" parent="globals/TreadmillDelegate" pc="268439918" symbol="onCharacteristicRead"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="372" parent="globals/TreadmillDelegate" pc="268439940" symbol="onCharacteristicRead"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="374" parent="globals/TreadmillDelegate" pc="268439953" symbol="onCharacteristicRead"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="378" parent="globals/TreadmillDelegate" pc="268439979" symbol="onCharacteristicWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="380" parent="globals/TreadmillDelegate" pc="268439983" symbol="onCharacteristicWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="381" parent="globals/TreadmillDelegate" pc="268440006" symbol="onCharacteristicWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="383" parent="globals/TreadmillDelegate" pc="268440028" symbol="onCharacteristicWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="385" parent="globals/TreadmillDelegate" pc="268440041" symbol="onCharacteristicWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="54" lineNum="389" parent="globals/TreadmillDelegate" pc="268440067" symbol="onDescriptorWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="54" lineNum="391" parent="globals/TreadmillDelegate" pc="268440071" symbol="onDescriptorWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="54" lineNum="392" parent="globals/TreadmillDelegate" pc="268440094" symbol="onDescriptorWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="54" lineNum="394" parent="globals/TreadmillDelegate" pc="268440107" symbol="onDescriptorWrite"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="55" lineNum="398" parent="globals/TreadmillDelegate" pc="268440133" symbol="onDescriptorRead"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="55" lineNum="400" parent="globals/TreadmillDelegate" pc="268440137" symbol="onDescriptorRead"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="55" lineNum="401" parent="globals/TreadmillDelegate" pc="268440160" symbol="onDescriptorRead"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="56" lineNum="327" parent="globals/TreadmillDelegate" pc="268442975" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="56" lineNum="327" parent="globals/TreadmillDelegate" pc="268442975" symbol="&lt;init&gt;"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="58" lineNum="17" parent="globals/FitContributor" pc="268440168" symbol="initialize"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="58" lineNum="18" parent="globals/FitContributor" pc="268440172" symbol="initialize"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="58" lineNum="20" parent="globals/FitContributor" pc="268440265" symbol="initialize"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="59" lineNum="23" parent="globals/FitContributor" pc="268440289" symbol="compute"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="59" lineNum="25" parent="globals/FitContributor" pc="268440293" symbol="compute"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="59" lineNum="28" parent="globals/FitContributor" pc="268440300" symbol="compute"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="59" lineNum="30" parent="globals/FitContributor" pc="268440326" symbol="compute"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="60" lineNum="39" parent="globals/FitContributor" pc="268440344" symbol="setTimerRunning"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="60" lineNum="40" parent="globals/FitContributor" pc="268440348" symbol="setTimerRunning"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="61" lineNum="43" parent="globals/FitContributor" pc="268440359" symbol="onTimerLap"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="62" lineNum="46" parent="globals/FitContributor" pc="268440364" symbol="onTimerReset"/>
-<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="63" lineNum="11" parent="globals/FitContributor" pc="268442658" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="65" lineNum="12" parent="globals/Rez/Drawables/frameDrawable" pc="268440369" symbol="initialize"/>
-<entry filename="Rez" id="65" lineNum="13" parent="globals/Rez/Drawables/frameDrawable" pc="268440373" symbol="initialize"/>
-<entry filename="Rez" id="66" lineNum="16" parent="globals/Rez/Drawables/frameDrawable" pc="268440398" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="17" parent="globals/Rez/Drawables/frameDrawable" pc="268440402" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="18" parent="globals/Rez/Drawables/frameDrawable" pc="268440413" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="19" parent="globals/Rez/Drawables/frameDrawable" pc="268440425" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="23" parent="globals/Rez/Drawables/frameDrawable" pc="268440432" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="26" parent="globals/Rez/Drawables/frameDrawable" pc="268440445" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="27" parent="globals/Rez/Drawables/frameDrawable" pc="268440481" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="29" parent="globals/Rez/Drawables/frameDrawable" pc="268440528" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="30" parent="globals/Rez/Drawables/frameDrawable" pc="268440564" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="32" parent="globals/Rez/Drawables/frameDrawable" pc="268440647" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="33" parent="globals/Rez/Drawables/frameDrawable" pc="268440683" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="35" parent="globals/Rez/Drawables/frameDrawable" pc="268440730" symbol="draw"/>
-<entry filename="Rez" id="66" lineNum="36" parent="globals/Rez/Drawables/frameDrawable" pc="268440766" symbol="draw"/>
-<entry filename="Rez" id="67" lineNum="10" parent="globals/Rez/Drawables/frameDrawable" pc="268442634" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="67" lineNum="10" parent="globals/Rez/Drawables/frameDrawable" pc="268442634" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="68" lineNum="2" parent="globals/Rez/Drawables" pc="268442633" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="69" lineNum="43" parent="globals/Rez/Fonts" pc="268442654" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="70" lineNum="45" parent="globals/Rez/JsonData" pc="268442656" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="71" lineNum="54" parent="globals/Rez/Layouts" pc="268440826" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="56" parent="globals/Rez/Layouts" pc="268440838" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="58" parent="globals/Rez/Layouts" pc="268440851" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="59" parent="globals/Rez/Layouts" pc="268440875" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="60" parent="globals/Rez/Layouts" pc="268440915" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="61" parent="globals/Rez/Layouts" pc="268440928" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="63" parent="globals/Rez/Layouts" pc="268440944" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="64" parent="globals/Rez/Layouts" pc="268441080" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="65" parent="globals/Rez/Layouts" pc="268441213" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="66" parent="globals/Rez/Layouts" pc="268441346" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="67" parent="globals/Rez/Layouts" pc="268441479" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="68" parent="globals/Rez/Layouts" pc="268441612" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="69" parent="globals/Rez/Layouts" pc="268441745" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="70" parent="globals/Rez/Layouts" pc="268441878" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="71" parent="globals/Rez/Layouts" pc="268442011" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="72" parent="globals/Rez/Layouts" pc="268442144" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="73" parent="globals/Rez/Layouts" pc="268442277" symbol="MainLayout"/>
-<entry filename="Rez" id="71" lineNum="75" parent="globals/Rez/Layouts" pc="268442413" symbol="MainLayout"/>
-<entry filename="Rez" id="72" lineNum="47" parent="globals/Rez/Layouts" pc="268442655" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="73" lineNum="80" parent="globals/Rez/Menus" pc="268442653" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="74" lineNum="82" parent="globals/Rez/Strings" pc="268442657" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="75" lineNum="1" parent="globals/Rez" pc="268442609" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="75" lineNum="1" parent="globals/Rez" pc="268442609" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="197" parent="globals/TreadmillProfile" pc="268438417" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="40" lineNum="198" parent="globals/TreadmillProfile" pc="268438443" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="218" parent="globals/TreadmillProfile" pc="268438470" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="220" parent="globals/TreadmillProfile" pc="268438474" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="220" parent="globals/TreadmillProfile" pc="268438485" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="221" parent="globals/TreadmillProfile" pc="268438495" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="221" parent="globals/TreadmillProfile" pc="268438506" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="222" parent="globals/TreadmillProfile" pc="268438516" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="223" parent="globals/TreadmillProfile" pc="268438526" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="224" parent="globals/TreadmillProfile" pc="268438539" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="225" parent="globals/TreadmillProfile" pc="268438586" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="227" parent="globals/TreadmillProfile" pc="268438651" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="41" lineNum="228" parent="globals/TreadmillProfile" pc="268438674" symbol="setSpeed"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="231" parent="globals/TreadmillProfile" pc="268438689" symbol="setIncline"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="233" parent="globals/TreadmillProfile" pc="268438693" symbol="setIncline"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="234" parent="globals/TreadmillProfile" pc="268438703" symbol="setIncline"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="235" parent="globals/TreadmillProfile" pc="268438716" symbol="setIncline"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="236" parent="globals/TreadmillProfile" pc="268438763" symbol="setIncline"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="238" parent="globals/TreadmillProfile" pc="268438828" symbol="setIncline"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="42" lineNum="239" parent="globals/TreadmillProfile" pc="268438851" symbol="setIncline"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="242" parent="globals/TreadmillProfile" pc="268438866" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="244" parent="globals/TreadmillProfile" pc="268438870" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="245" parent="globals/TreadmillProfile" pc="268438893" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="247" parent="globals/TreadmillProfile" pc="268438911" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="248" parent="globals/TreadmillProfile" pc="268438921" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="249" parent="globals/TreadmillProfile" pc="268438937" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="250" parent="globals/TreadmillProfile" pc="268438947" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="251" parent="globals/TreadmillProfile" pc="268438970" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="253" parent="globals/TreadmillProfile" pc="268438991" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="254" parent="globals/TreadmillProfile" pc="268439012" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="255" parent="globals/TreadmillProfile" pc="268439040" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="257" parent="globals/TreadmillProfile" pc="268439087" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="259" parent="globals/TreadmillProfile" pc="268439105" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="43" lineNum="260" parent="globals/TreadmillProfile" pc="268439115" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="264" parent="globals/TreadmillProfile" pc="268439142" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="266" parent="globals/TreadmillProfile" pc="268439146" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="268" parent="globals/TreadmillProfile" pc="268439166" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="270" parent="globals/TreadmillProfile" pc="268439182" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="44" lineNum="273" parent="globals/TreadmillProfile" pc="268439204" symbol="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="276" parent="globals/TreadmillProfile" pc="268439208" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="278" parent="globals/TreadmillProfile" pc="268439212" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="280" parent="globals/TreadmillProfile" pc="268439235" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="282" parent="globals/TreadmillProfile" pc="268439255" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="284" parent="globals/TreadmillProfile" pc="268439288" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="45" lineNum="285" parent="globals/TreadmillProfile" pc="268439316" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="46" lineNum="290" parent="globals/TreadmillProfile" pc="268439355" symbol="onDescriptorWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="12" parent="globals/TreadmillProfile" pc="268442402" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="13" parent="globals/TreadmillProfile" pc="268442419" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="31" parent="globals/TreadmillProfile" pc="268442436" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="44" parent="globals/TreadmillProfile" pc="268442450" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="45" parent="globals/TreadmillProfile" pc="268442474" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="46" parent="globals/TreadmillProfile" pc="268442498" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="47" parent="globals/TreadmillProfile" pc="268442522" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="89" parent="globals/TreadmillProfile" pc="268442546" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="47" lineNum="6" parent="globals/TreadmillProfile" pc="268442402" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="48" lineNum="336" parent="globals/TreadmillDelegate" pc="268439360" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="48" lineNum="338" parent="globals/TreadmillDelegate" pc="268439364" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="48" lineNum="339" parent="globals/TreadmillDelegate" pc="268439382" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="48" lineNum="340" parent="globals/TreadmillDelegate" pc="268439392" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="49" lineNum="343" parent="globals/TreadmillDelegate" pc="268439416" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="49" lineNum="345" parent="globals/TreadmillDelegate" pc="268439420" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="49" lineNum="346" parent="globals/TreadmillDelegate" pc="268439443" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="49" lineNum="348" parent="globals/TreadmillDelegate" pc="268439456" symbol="onScanResults"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="50" lineNum="352" parent="globals/TreadmillDelegate" pc="268439480" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="50" lineNum="354" parent="globals/TreadmillDelegate" pc="268439484" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="50" lineNum="355" parent="globals/TreadmillDelegate" pc="268439507" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="50" lineNum="357" parent="globals/TreadmillDelegate" pc="268439520" symbol="onConnectedStateChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="361" parent="globals/TreadmillDelegate" pc="268439546" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="363" parent="globals/TreadmillDelegate" pc="268439550" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="364" parent="globals/TreadmillDelegate" pc="268439573" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="366" parent="globals/TreadmillDelegate" pc="268439595" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="51" lineNum="368" parent="globals/TreadmillDelegate" pc="268439608" symbol="onCharacteristicChanged"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="372" parent="globals/TreadmillDelegate" pc="268439634" symbol="onCharacteristicRead"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="374" parent="globals/TreadmillDelegate" pc="268439638" symbol="onCharacteristicRead"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="375" parent="globals/TreadmillDelegate" pc="268439661" symbol="onCharacteristicRead"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="376" parent="globals/TreadmillDelegate" pc="268439683" symbol="onCharacteristicRead"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="52" lineNum="378" parent="globals/TreadmillDelegate" pc="268439696" symbol="onCharacteristicRead"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="382" parent="globals/TreadmillDelegate" pc="268439722" symbol="onCharacteristicWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="384" parent="globals/TreadmillDelegate" pc="268439726" symbol="onCharacteristicWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="385" parent="globals/TreadmillDelegate" pc="268439749" symbol="onCharacteristicWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="387" parent="globals/TreadmillDelegate" pc="268439771" symbol="onCharacteristicWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="53" lineNum="389" parent="globals/TreadmillDelegate" pc="268439784" symbol="onCharacteristicWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="54" lineNum="393" parent="globals/TreadmillDelegate" pc="268439810" symbol="onDescriptorWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="54" lineNum="395" parent="globals/TreadmillDelegate" pc="268439814" symbol="onDescriptorWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="54" lineNum="396" parent="globals/TreadmillDelegate" pc="268439837" symbol="onDescriptorWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="54" lineNum="398" parent="globals/TreadmillDelegate" pc="268439850" symbol="onDescriptorWrite"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="55" lineNum="402" parent="globals/TreadmillDelegate" pc="268439876" symbol="onDescriptorRead"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="55" lineNum="404" parent="globals/TreadmillDelegate" pc="268439880" symbol="onDescriptorRead"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="55" lineNum="405" parent="globals/TreadmillDelegate" pc="268439903" symbol="onDescriptorRead"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="56" lineNum="331" parent="globals/TreadmillDelegate" pc="268442718" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\TreadmillProfile.mc" id="56" lineNum="331" parent="globals/TreadmillDelegate" pc="268442718" symbol="&lt;init&gt;"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="58" lineNum="17" parent="globals/FitContributor" pc="268439911" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="58" lineNum="18" parent="globals/FitContributor" pc="268439915" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="58" lineNum="20" parent="globals/FitContributor" pc="268440008" symbol="initialize"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="59" lineNum="23" parent="globals/FitContributor" pc="268440032" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="59" lineNum="25" parent="globals/FitContributor" pc="268440036" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="59" lineNum="28" parent="globals/FitContributor" pc="268440043" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="59" lineNum="30" parent="globals/FitContributor" pc="268440069" symbol="compute"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="60" lineNum="39" parent="globals/FitContributor" pc="268440087" symbol="setTimerRunning"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="60" lineNum="40" parent="globals/FitContributor" pc="268440091" symbol="setTimerRunning"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="61" lineNum="43" parent="globals/FitContributor" pc="268440102" symbol="onTimerLap"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="62" lineNum="46" parent="globals/FitContributor" pc="268440107" symbol="onTimerReset"/>
+<entry filename="D:\\bitbucket\\garmin-treadmill\\source\\fitContributions.mc" id="63" lineNum="11" parent="globals/FitContributor" pc="268442401" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="65" lineNum="12" parent="globals/Rez/Drawables/frameDrawable" pc="268440112" symbol="initialize"/>
+<entry filename="Rez" id="65" lineNum="13" parent="globals/Rez/Drawables/frameDrawable" pc="268440116" symbol="initialize"/>
+<entry filename="Rez" id="66" lineNum="16" parent="globals/Rez/Drawables/frameDrawable" pc="268440141" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="17" parent="globals/Rez/Drawables/frameDrawable" pc="268440145" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="18" parent="globals/Rez/Drawables/frameDrawable" pc="268440156" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="19" parent="globals/Rez/Drawables/frameDrawable" pc="268440168" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="23" parent="globals/Rez/Drawables/frameDrawable" pc="268440175" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="26" parent="globals/Rez/Drawables/frameDrawable" pc="268440188" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="27" parent="globals/Rez/Drawables/frameDrawable" pc="268440224" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="29" parent="globals/Rez/Drawables/frameDrawable" pc="268440271" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="30" parent="globals/Rez/Drawables/frameDrawable" pc="268440307" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="32" parent="globals/Rez/Drawables/frameDrawable" pc="268440390" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="33" parent="globals/Rez/Drawables/frameDrawable" pc="268440426" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="35" parent="globals/Rez/Drawables/frameDrawable" pc="268440473" symbol="draw"/>
+<entry filename="Rez" id="66" lineNum="36" parent="globals/Rez/Drawables/frameDrawable" pc="268440509" symbol="draw"/>
+<entry filename="Rez" id="67" lineNum="10" parent="globals/Rez/Drawables/frameDrawable" pc="268442377" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="67" lineNum="10" parent="globals/Rez/Drawables/frameDrawable" pc="268442377" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="68" lineNum="2" parent="globals/Rez/Drawables" pc="268442376" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="69" lineNum="43" parent="globals/Rez/Fonts" pc="268442397" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="70" lineNum="45" parent="globals/Rez/JsonData" pc="268442399" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="71" lineNum="54" parent="globals/Rez/Layouts" pc="268440569" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="56" parent="globals/Rez/Layouts" pc="268440581" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="58" parent="globals/Rez/Layouts" pc="268440594" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="59" parent="globals/Rez/Layouts" pc="268440618" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="60" parent="globals/Rez/Layouts" pc="268440658" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="61" parent="globals/Rez/Layouts" pc="268440671" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="63" parent="globals/Rez/Layouts" pc="268440687" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="64" parent="globals/Rez/Layouts" pc="268440823" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="65" parent="globals/Rez/Layouts" pc="268440956" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="66" parent="globals/Rez/Layouts" pc="268441089" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="67" parent="globals/Rez/Layouts" pc="268441222" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="68" parent="globals/Rez/Layouts" pc="268441355" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="69" parent="globals/Rez/Layouts" pc="268441488" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="70" parent="globals/Rez/Layouts" pc="268441621" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="71" parent="globals/Rez/Layouts" pc="268441754" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="72" parent="globals/Rez/Layouts" pc="268441887" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="73" parent="globals/Rez/Layouts" pc="268442020" symbol="MainLayout"/>
+<entry filename="Rez" id="71" lineNum="75" parent="globals/Rez/Layouts" pc="268442156" symbol="MainLayout"/>
+<entry filename="Rez" id="72" lineNum="47" parent="globals/Rez/Layouts" pc="268442398" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="73" lineNum="80" parent="globals/Rez/Menus" pc="268442396" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="74" lineNum="82" parent="globals/Rez/Strings" pc="268442400" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="75" lineNum="1" parent="globals/Rez" pc="268442352" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="75" lineNum="1" parent="globals/Rez" pc="268442352" symbol="&lt;init&gt;"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -481,67 +474,66 @@
 <entry endPc="268438353" name="ch" stackId="3" startPc="268438346"/>
 <entry arg="true" endPc="268438354" name="char" stackId="1" startPc="268438342"/>
 <entry arg="true" endPc="268438354" name="value" stackId="2" startPc="268438342"/>
-<entry endPc="268438722" name="temp" stackId="5" startPc="268438413"/>
-<entry endPc="268438725" name="cu" stackId="4" startPc="268438359"/>
-<entry endPc="268438725" name="name" stackId="3" startPc="268438359"/>
-<entry arg="true" endPc="268438726" name="char" stackId="1" startPc="268438355"/>
-<entry arg="true" endPc="268438726" name="value" stackId="2" startPc="268438355"/>
-<entry endPc="268438944" name="b1" stackId="4" startPc="268438731"/>
-<entry endPc="268438944" name="long1" stackId="3" startPc="268438731"/>
-<entry endPc="268438944" name="kph" stackId="2" startPc="268438731"/>
-<entry arg="true" endPc="268438945" name="speed" stackId="1" startPc="268438727"/>
-<entry endPc="268439121" name="b1" stackId="4" startPc="268438950"/>
-<entry endPc="268439121" name="incl" stackId="2" startPc="268438950"/>
-<entry endPc="268439121" name="long1" stackId="3" startPc="268438950"/>
-<entry arg="true" endPc="268439122" name="incline" stackId="1" startPc="268438946"/>
-<entry endPc="268439340" name="service" stackId="3" startPc="268439168"/>
-<entry endPc="268439340" name="cccd" stackId="5" startPc="268439168"/>
-<entry endPc="268439340" name="characteristic" stackId="4" startPc="268439168"/>
-<entry arg="true" endPc="268439398" name="device" stackId="1" startPc="268439123"/>
-<entry arg="true" endPc="268439398" name="state" stackId="2" startPc="268439123"/>
-<entry endPc="268439460" name="uuid" stackId="3" startPc="268439423"/>
-<entry arg="true" endPc="268439464" name="iter" stackId="1" startPc="268439399"/>
-<entry arg="true" endPc="268439464" name="obj" stackId="2" startPc="268439399"/>
-<entry endPc="268439591" name="d" stackId="3" startPc="268439545"/>
-<entry endPc="268439610" name="result" stackId="2" startPc="268439512"/>
-<entry arg="true" endPc="268439611" name="scanResults" stackId="1" startPc="268439465"/>
-<entry arg="true" endPc="268439616" name="status" stackId="2" startPc="268439612"/>
-<entry arg="true" endPc="268439616" name="descriptor" stackId="1" startPc="268439612"/>
-<entry arg="true" endPc="268439672" name="parent" stackId="1" startPc="268439617"/>
-<entry arg="true" endPc="268439736" name="scanResults" stackId="1" startPc="268439673"/>
-<entry arg="true" endPc="268439802" name="device" stackId="1" startPc="268439737"/>
-<entry arg="true" endPc="268439802" name="state" stackId="2" startPc="268439737"/>
-<entry arg="true" endPc="268439890" name="char" stackId="1" startPc="268439803"/>
-<entry arg="true" endPc="268439890" name="value" stackId="2" startPc="268439803"/>
-<entry arg="true" endPc="268439978" name="char" stackId="1" startPc="268439891"/>
-<entry arg="true" endPc="268439978" name="value" stackId="2" startPc="268439891"/>
-<entry arg="true" endPc="268440066" name="char" stackId="1" startPc="268439979"/>
-<entry arg="true" endPc="268440066" name="value" stackId="2" startPc="268439979"/>
-<entry arg="true" endPc="268440132" name="status" stackId="2" startPc="268440067"/>
-<entry arg="true" endPc="268440132" name="descriptor" stackId="1" startPc="268440067"/>
-<entry endPc="268440166" name="q" stackId="3" startPc="268440137"/>
-<entry arg="true" endPc="268440167" name="status" stackId="2" startPc="268440133"/>
-<entry arg="true" endPc="268440167" name="descriptor" stackId="1" startPc="268440133"/>
-<entry arg="true" endPc="268440288" name="dataField" stackId="1" startPc="268440168"/>
-<entry arg="true" endPc="268440343" name="sensor" stackId="1" startPc="268440289"/>
-<entry arg="true" endPc="268440358" name="state" stackId="1" startPc="268440344"/>
-<entry endPc="268440824" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268440402"/>
-<entry arg="true" endPc="268440825" name="dc" stackId="1" startPc="268440398"/>
-<entry endPc="268442549" name="rez_cmp_local_text_DistanceValue" stackId="5" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_TimeLabel" stackId="6" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_TimeValue" stackId="7" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_PaceLabel" stackId="8" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_PaceValue" stackId="9" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_CadenceLabel" stackId="10" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_custom_drawable_16029869564495802871" stackId="3" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_CadenceValue" stackId="11" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_custom_drawable_frameDrawable" stackId="4" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_AvgPaceLabel" stackId="12" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_HRLabel" stackId="14" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_AvgPaceValue" stackId="13" startPc="268440838"/>
-<entry endPc="268442549" name="rez_cmp_local_text_HRValue" stackId="15" startPc="268440838"/>
-<entry arg="true" endPc="268442550" name="dc" stackId="1" startPc="268440826"/>
+<entry endPc="268438468" name="cu" stackId="4" startPc="268438359"/>
+<entry endPc="268438468" name="name" stackId="3" startPc="268438359"/>
+<entry arg="true" endPc="268438469" name="char" stackId="1" startPc="268438355"/>
+<entry arg="true" endPc="268438469" name="value" stackId="2" startPc="268438355"/>
+<entry endPc="268438687" name="b1" stackId="4" startPc="268438474"/>
+<entry endPc="268438687" name="long1" stackId="3" startPc="268438474"/>
+<entry endPc="268438687" name="kph" stackId="2" startPc="268438474"/>
+<entry arg="true" endPc="268438688" name="speed" stackId="1" startPc="268438470"/>
+<entry endPc="268438864" name="b1" stackId="4" startPc="268438693"/>
+<entry endPc="268438864" name="incl" stackId="2" startPc="268438693"/>
+<entry endPc="268438864" name="long1" stackId="3" startPc="268438693"/>
+<entry arg="true" endPc="268438865" name="incline" stackId="1" startPc="268438689"/>
+<entry endPc="268439083" name="service" stackId="3" startPc="268438911"/>
+<entry endPc="268439083" name="cccd" stackId="5" startPc="268438911"/>
+<entry endPc="268439083" name="characteristic" stackId="4" startPc="268438911"/>
+<entry arg="true" endPc="268439141" name="device" stackId="1" startPc="268438866"/>
+<entry arg="true" endPc="268439141" name="state" stackId="2" startPc="268438866"/>
+<entry endPc="268439203" name="uuid" stackId="3" startPc="268439166"/>
+<entry arg="true" endPc="268439207" name="iter" stackId="1" startPc="268439142"/>
+<entry arg="true" endPc="268439207" name="obj" stackId="2" startPc="268439142"/>
+<entry endPc="268439334" name="d" stackId="3" startPc="268439288"/>
+<entry endPc="268439353" name="result" stackId="2" startPc="268439255"/>
+<entry arg="true" endPc="268439354" name="scanResults" stackId="1" startPc="268439208"/>
+<entry arg="true" endPc="268439359" name="status" stackId="2" startPc="268439355"/>
+<entry arg="true" endPc="268439359" name="descriptor" stackId="1" startPc="268439355"/>
+<entry arg="true" endPc="268439415" name="parent" stackId="1" startPc="268439360"/>
+<entry arg="true" endPc="268439479" name="scanResults" stackId="1" startPc="268439416"/>
+<entry arg="true" endPc="268439545" name="device" stackId="1" startPc="268439480"/>
+<entry arg="true" endPc="268439545" name="state" stackId="2" startPc="268439480"/>
+<entry arg="true" endPc="268439633" name="char" stackId="1" startPc="268439546"/>
+<entry arg="true" endPc="268439633" name="value" stackId="2" startPc="268439546"/>
+<entry arg="true" endPc="268439721" name="char" stackId="1" startPc="268439634"/>
+<entry arg="true" endPc="268439721" name="value" stackId="2" startPc="268439634"/>
+<entry arg="true" endPc="268439809" name="char" stackId="1" startPc="268439722"/>
+<entry arg="true" endPc="268439809" name="value" stackId="2" startPc="268439722"/>
+<entry arg="true" endPc="268439875" name="status" stackId="2" startPc="268439810"/>
+<entry arg="true" endPc="268439875" name="descriptor" stackId="1" startPc="268439810"/>
+<entry endPc="268439909" name="q" stackId="3" startPc="268439880"/>
+<entry arg="true" endPc="268439910" name="status" stackId="2" startPc="268439876"/>
+<entry arg="true" endPc="268439910" name="descriptor" stackId="1" startPc="268439876"/>
+<entry arg="true" endPc="268440031" name="dataField" stackId="1" startPc="268439911"/>
+<entry arg="true" endPc="268440086" name="sensor" stackId="1" startPc="268440032"/>
+<entry arg="true" endPc="268440101" name="state" stackId="1" startPc="268440087"/>
+<entry endPc="268440567" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268440145"/>
+<entry arg="true" endPc="268440568" name="dc" stackId="1" startPc="268440141"/>
+<entry endPc="268442292" name="rez_cmp_local_text_DistanceValue" stackId="5" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_TimeLabel" stackId="6" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_TimeValue" stackId="7" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_PaceLabel" stackId="8" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_PaceValue" stackId="9" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_custom_drawable_72455114614808177831" stackId="3" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_CadenceLabel" stackId="10" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_CadenceValue" stackId="11" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_custom_drawable_frameDrawable" stackId="4" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_AvgPaceLabel" stackId="12" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_HRLabel" stackId="14" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_AvgPaceValue" stackId="13" startPc="268440581"/>
+<entry endPc="268442292" name="rez_cmp_local_text_HRValue" stackId="15" startPc="268440581"/>
+<entry arg="true" endPc="268442293" name="dc" stackId="1" startPc="268440569"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -598,7 +590,7 @@
 <functionEntry accessMode="public" endPc="268437048" name="onTimerResume" parent="GarminTreadmillView" startPc="268437024">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442608" name="&lt;init&gt;" parent="GarminTreadmillView" startPc="268442590">
+<functionEntry accessMode="protected" endPc="268442351" name="&lt;init&gt;" parent="GarminTreadmillView" startPc="268442333">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" endPc="268437094" name="initialize" parent="Background" startPc="268437049">
@@ -612,7 +604,7 @@
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442589" name="&lt;init&gt;" parent="Background" startPc="268442571">
+<functionEntry accessMode="protected" endPc="268442332" name="&lt;init&gt;" parent="Background" startPc="268442314">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" endPc="268437181" name="initialize" parent="GarminTreadmillApp" startPc="268437159">
@@ -629,7 +621,7 @@
 <functionEntry accessMode="public" endPc="268437233" name="getInitialView" parent="GarminTreadmillApp" startPc="268437192">
 <documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442570" name="&lt;init&gt;" parent="GarminTreadmillApp" startPc="268442552">
+<functionEntry accessMode="protected" endPc="268442313" name="&lt;init&gt;" parent="GarminTreadmillApp" startPc="268442295">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" endPc="268437297" name="wordToUuid" parent="TreadmillProfile" startPc="268437234">
@@ -690,136 +682,136 @@
 <param id="value"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438726" name="onCharacteristicChanged" parent="TreadmillProfile" startPc="268438355">
+<functionEntry accessMode="public" endPc="268438469" name="onCharacteristicChanged" parent="TreadmillProfile" startPc="268438355">
 <param id="char"/>
 <param id="value"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268438945" name="setSpeed" parent="TreadmillProfile" startPc="268438727">
+<functionEntry accessMode="public" endPc="268438688" name="setSpeed" parent="TreadmillProfile" startPc="268438470">
 <param id="speed"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439122" name="setIncline" parent="TreadmillProfile" startPc="268438946">
+<functionEntry accessMode="public" endPc="268438865" name="setIncline" parent="TreadmillProfile" startPc="268438689">
 <param id="incline"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439398" name="onConnectedStateChanged" parent="TreadmillProfile" startPc="268439123">
+<functionEntry accessMode="public" endPc="268439141" name="onConnectedStateChanged" parent="TreadmillProfile" startPc="268438866">
 <param id="device"/>
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="private" endPc="268439464" name="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;" parent="TreadmillProfile" startPc="268439399">
+<functionEntry accessMode="private" endPc="268439207" name="&lt;globals/TreadmillProfile/&lt;&gt;contains&gt;" parent="TreadmillProfile" startPc="268439142">
 <param id="iter"/>
 <param id="obj"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439611" name="onScanResults" parent="TreadmillProfile" startPc="268439465">
+<functionEntry accessMode="public" endPc="268439354" name="onScanResults" parent="TreadmillProfile" startPc="268439208">
 <param id="scanResults"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439616" name="onDescriptorWrite" parent="TreadmillProfile" startPc="268439612">
+<functionEntry accessMode="public" endPc="268439359" name="onDescriptorWrite" parent="TreadmillProfile" startPc="268439355">
 <param id="descriptor"/>
 <param id="status"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442974" name="&lt;init&gt;" parent="TreadmillProfile" startPc="268442659">
+<functionEntry accessMode="protected" endPc="268442717" name="&lt;init&gt;" parent="TreadmillProfile" startPc="268442402">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439672" name="initialize" parent="TreadmillDelegate" startPc="268439617">
+<functionEntry accessMode="public" endPc="268439415" name="initialize" parent="TreadmillDelegate" startPc="268439360">
 <param id="parent"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439736" name="onScanResults" parent="TreadmillDelegate" startPc="268439673">
+<functionEntry accessMode="public" endPc="268439479" name="onScanResults" parent="TreadmillDelegate" startPc="268439416">
 <param id="scanResults"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439802" name="onConnectedStateChanged" parent="TreadmillDelegate" startPc="268439737">
+<functionEntry accessMode="public" endPc="268439545" name="onConnectedStateChanged" parent="TreadmillDelegate" startPc="268439480">
 <param id="device"/>
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439890" name="onCharacteristicChanged" parent="TreadmillDelegate" startPc="268439803">
+<functionEntry accessMode="public" endPc="268439633" name="onCharacteristicChanged" parent="TreadmillDelegate" startPc="268439546">
 <param id="char"/>
 <param id="value"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268439978" name="onCharacteristicRead" parent="TreadmillDelegate" startPc="268439891">
+<functionEntry accessMode="public" endPc="268439721" name="onCharacteristicRead" parent="TreadmillDelegate" startPc="268439634">
 <param id="char"/>
 <param id="value"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440066" name="onCharacteristicWrite" parent="TreadmillDelegate" startPc="268439979">
+<functionEntry accessMode="public" endPc="268439809" name="onCharacteristicWrite" parent="TreadmillDelegate" startPc="268439722">
 <param id="char"/>
 <param id="value"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440132" name="onDescriptorWrite" parent="TreadmillDelegate" startPc="268440067">
+<functionEntry accessMode="public" endPc="268439875" name="onDescriptorWrite" parent="TreadmillDelegate" startPc="268439810">
 <param id="descriptor"/>
 <param id="status"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440167" name="onDescriptorRead" parent="TreadmillDelegate" startPc="268440133">
+<functionEntry accessMode="public" endPc="268439910" name="onDescriptorRead" parent="TreadmillDelegate" startPc="268439876">
 <param id="descriptor"/>
 <param id="status"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442993" name="&lt;init&gt;" parent="TreadmillDelegate" startPc="268442975">
+<functionEntry accessMode="protected" endPc="268442736" name="&lt;init&gt;" parent="TreadmillDelegate" startPc="268442718">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440288" name="initialize" parent="FitContributor" startPc="268440168">
+<functionEntry accessMode="public" endPc="268440031" name="initialize" parent="FitContributor" startPc="268439911">
 <param id="dataField"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440343" name="compute" parent="FitContributor" startPc="268440289">
+<functionEntry accessMode="public" endPc="268440086" name="compute" parent="FitContributor" startPc="268440032">
 <param id="sensor"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440358" name="setTimerRunning" parent="FitContributor" startPc="268440344">
+<functionEntry accessMode="public" endPc="268440101" name="setTimerRunning" parent="FitContributor" startPc="268440087">
 <param id="state"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440363" name="onTimerLap" parent="FitContributor" startPc="268440359">
+<functionEntry accessMode="public" endPc="268440106" name="onTimerLap" parent="FitContributor" startPc="268440102">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440368" name="onTimerReset" parent="FitContributor" startPc="268440364">
+<functionEntry accessMode="public" endPc="268440111" name="onTimerReset" parent="FitContributor" startPc="268440107">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442658" name="&lt;init&gt;" parent="FitContributor" startPc="268442658">
+<functionEntry accessMode="protected" endPc="268442401" name="&lt;init&gt;" parent="FitContributor" startPc="268442401">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440397" name="initialize" parent="frameDrawable" startPc="268440369">
+<functionEntry accessMode="public" endPc="268440140" name="initialize" parent="frameDrawable" startPc="268440112">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268440825" name="draw" parent="frameDrawable" startPc="268440398">
+<functionEntry accessMode="public" endPc="268440568" name="draw" parent="frameDrawable" startPc="268440141">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442652" name="&lt;init&gt;" parent="frameDrawable" startPc="268442634">
+<functionEntry accessMode="protected" endPc="268442395" name="&lt;init&gt;" parent="frameDrawable" startPc="268442377">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442633" name="&lt;init&gt;" parent="Drawables" startPc="268442633">
+<functionEntry accessMode="protected" endPc="268442376" name="&lt;init&gt;" parent="Drawables" startPc="268442376">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442654" name="&lt;init&gt;" parent="Fonts" startPc="268442654">
+<functionEntry accessMode="protected" endPc="268442397" name="&lt;init&gt;" parent="Fonts" startPc="268442397">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442656" name="&lt;init&gt;" parent="JsonData" startPc="268442656">
+<functionEntry accessMode="protected" endPc="268442399" name="&lt;init&gt;" parent="JsonData" startPc="268442399">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268442550" name="MainLayout" parent="Layouts" startPc="268440826">
+<functionEntry accessMode="public" endPc="268442293" name="MainLayout" parent="Layouts" startPc="268440569">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442655" name="&lt;init&gt;" parent="Layouts" startPc="268442655">
+<functionEntry accessMode="protected" endPc="268442398" name="&lt;init&gt;" parent="Layouts" startPc="268442398">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442653" name="&lt;init&gt;" parent="Menus" startPc="268442653">
+<functionEntry accessMode="protected" endPc="268442396" name="&lt;init&gt;" parent="Menus" startPc="268442396">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442657" name="&lt;init&gt;" parent="Strings" startPc="268442657">
+<functionEntry accessMode="protected" endPc="268442400" name="&lt;init&gt;" parent="Strings" startPc="268442400">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268442632" name="&lt;init&gt;" parent="Rez" startPc="268442609">
+<functionEntry accessMode="protected" endPc="268442375" name="&lt;init&gt;" parent="Rez" startPc="268442352">
 <documentation/>
 </functionEntry>
 </functions>

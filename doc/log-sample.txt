@@ -1,0 +1,154 @@
+initialize
+BleDelegate.initialize
+ScanMenuDelegate.starting scan
+BleDelegate.onScanResults
+TreadmillProfile.onScanResults
+BleDelegate.onConnectedStateChanged
+TreadmillProfile.onConnectedStateChanged
+CONNECTION_STATE_CONNECTED
+BleDelegate.onDescriptorWrite
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 22, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 22, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+

@@ -190,25 +190,30 @@ class TreadmillProfile
 
     function onCharacteristicChanged(char, value)
     {
+
+        // https://github.com/cagnulein/qdomyos-zwift/blob/a8935e11f1bce424094101b6b668ec600a1ea409/src/shuaa5treadmill.cpp#L167
         var name = _device.getName();
         var cu = char.getUuid();
+        System.println("cu:"+cu);
+        System.println("value:"+value);
+        System.println("name:"+name);
         
-        if (cu.equals(TREADMILL_DATA_CHARACTERISTIC))
-        {
-            _rawSpeed = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _speedOffset });
-            _speed = _rawSpeed / 100.0f * 0.621371192f;
-            _rawIncline = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _inclineOffset });
-            _incline = _rawIncline / 10.0f;
+        // if (cu.equals(TREADMILL_DATA_CHARACTERISTIC))
+        // {
+        //     _rawSpeed = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _speedOffset });
+        //     _speed = _rawSpeed / 100.0f * 0.621371192f;
+        //     _rawIncline = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _inclineOffset });
+        //     _incline = _rawIncline / 10.0f;
             
-            var temp = value.decodeNumber(Lang.NUMBER_FORMAT_UINT32, { :offset => _totalDistanceOffset });
-            temp = temp & 0x00ffffff;
-            _totalDistance = temp  *  0.000621371f;
-            _elevationGain = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _positiveElevationGainOffset }) / 10.0f * 3.28084f ;
-            //_totalEnergy   = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _totalEnergyOffset }) / 10;
-            //System.println(_totalEnergy);
-            WatchUi.requestUpdate();
+        //     var temp = value.decodeNumber(Lang.NUMBER_FORMAT_UINT32, { :offset => _totalDistanceOffset });
+        //     temp = temp & 0x00ffffff;
+        //     _totalDistance = temp  *  0.000621371f;
+        //     _elevationGain = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _positiveElevationGainOffset }) / 10.0f * 3.28084f ;
+        //     //_totalEnergy   = value.decodeNumber(Lang.NUMBER_FORMAT_UINT16, { :offset => _totalEnergyOffset }) / 10;
+        //     //System.println(_totalEnergy);
+        //     WatchUi.requestUpdate();
              
-        }
+        // }
     }
     
     function setSpeed (speed)
