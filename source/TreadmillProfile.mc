@@ -30,15 +30,6 @@ class TreadmillProfile
     private var _elevationGain = 0;
     private var _totalEnergy = 0;
     
-    //offsets;
-    private var _speedOffset = 2;
-    private var _averageSpeedOffset = 4;
-    private var _totalDistanceOffset = 6;
-    private var _inclineOffset = 9;
-    private var _rampAngleOffset = 11;
-    private var _positiveElevationGainOffset = 13;
-    private var _negativeElevationGainOffset = 15;
-    private var _totalEnergyOffset = 19;
     private var _isConnected = false;
     
     private var stack = new[0];
@@ -73,6 +64,17 @@ class TreadmillProfile
     public const TREADMILL_DATA_FLAG_ELAPSEDTIME    = 0x0400;
     public const TREADMILL_DATA_FLAG_REMAININGTIME  = 0x0800;
     public const TREADMILL_DATA_FLAG_FORCEBELT      = 0x1000;
+
+    // https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/fmcp-0000001050147089
+    public const FITNESS_MACHINE_CONTROL_POINT_OPCODE_REQUESTCONTROL            = 0x00;
+    public const FITNESS_MACHINE_CONTROL_POINT_OPCODE_RESET                     = 0x01;
+    public const FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETSPEED            = 0x02;
+    public const FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETINCLINATION      = 0x03;
+    public const FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETRESISTANCELEVEL  = 0x04;
+    public const FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETPOWER            = 0x05;
+    public const FITNESS_MACHINE_CONTROL_POINT_OPCODE_STARTORRESUME             = 0x07;
+    public const FITNESS_MACHINE_CONTROL_POINT_OPCODE_STOPORPAUSE               = 0x08;
+    public const FITNESS_MACHINE_CONTROL_POINT_OPCODE_RESPONSECODE              = 0x80;
 
     function isConnected()
     {
@@ -175,7 +177,8 @@ class TreadmillProfile
     {
         if (stack.size() == 0) {return;} // nothing to do
         if (writeBusy == true) {return;}// already busy.  nothing to do
-        
+        // https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/fmcp-0000001050147089
+        // https://github.com/cagnulein/qdomyos-zwift/blob/5bf7864efb074d59179813bd6b331e8bfb75ed8a/src/technogymmyruntreadmill.cpp#L225
         var characteristic = _device.getService(FITNESS_MACHINE_SERVICE).getCharacteristic(TREADMILL_CONTROL_POINT);
         try
         {
@@ -327,22 +330,26 @@ class TreadmillProfile
     
     function setSpeed (speed)
     {
-        if (speed < 0) {speed = 0;}
-        if (speed > 12) {speed = 12;}
-        var kph = speed * 160.934;
-        var long1 = kph.toLong();//convert to kph and multiply by one humdred
-        var b1 = [0x02,0,0]b;   //starting with 2 means set speed
-        b1.encodeNumber(long1,Lang.NUMBER_FORMAT_UINT16,{:offset=>1,:endianness=>Lang.ENDIAN_LITTLE});
+        System.println("setSpeed");
+
+        // https://github.com/cagnulein/qdomyos-zwift/blob/a8935e11f1bce424094101b6b668ec600a1ea409/src/shuaa5treadmill.cpp#L145
+        if (speed < 0.0) {speed = 0.0;}
+        if (speed > 14.0) {speed = 14.0;}
         
-           System.println("speed");
-        pushWrite(b1);
+        var i = [FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETSPEED, 0x00, 0x00];
+        var lsb = speed * 100.0;
+        var msb = speed * 100.0 / 256.0; 
+        i[1] = (0x00FF)&(lsb.toNumber());
+        i[2] = (0x00FF)&(msb.toNumber());
+
+        pushWrite(i);
     }
 
     function setIncline (incline)
     {
         var incl = incline * 10.0;
         var long1 = incl.toLong();//convert to kph and multiply by one humdred
-        var b1 = [0x03,0,0]b;   //starting with 2 means set speed
+        var b1 = [FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETINCLINATION,0,0]b;   //starting with 2 means set speed
         b1.encodeNumber(long1,Lang.NUMBER_FORMAT_UINT16,{:offset=>1,:endianness=>Lang.ENDIAN_LITTLE});
         
            System.println("incline");
@@ -433,10 +440,6 @@ function onDescriptorWrite(descriptor, status)
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 class TreadmillDelegate extends Ble.BleDelegate 
 {
@@ -472,7 +475,6 @@ class TreadmillDelegate extends Ble.BleDelegate
     {
         System.println("BleDelegate.onCharacteristicChanged");
         BleDelegate.onCharacteristicChanged(char, value);
-        //System.println("**callback characteristic Changed");
         if (_parent != null)
         {
             _parent.onCharacteristicChanged(char, value);
