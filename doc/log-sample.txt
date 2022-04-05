@@ -1,154 +1,261 @@
-initialize
-BleDelegate.initialize
-ScanMenuDelegate.starting scan
-BleDelegate.onScanResults
-TreadmillProfile.onScanResults
-BleDelegate.onConnectedStateChanged
-TreadmillProfile.onConnectedStateChanged
-CONNECTION_STATE_CONNECTED
-BleDelegate.onDescriptorWrite
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:1.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:1.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:1.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
+_instantaneousSpeed:1.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 22, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 22, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:0.000000
+_heartRate:0
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
+BleDelegate.onCharacteristicChanged
+cu:00002ACD-0000-1000-8000-00805F9B34FB
+value:[164, 1, 32, 3, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+name:Domyos-TC-0751
+_instantaneousSpeed:8.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
 value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
 BleDelegate.onCharacteristicChanged
 cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+value:[164, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
 name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-
+_instantaneousSpeed:0.000000
+_totalDistance:
+_instantPace:
+_expEnergy:1.000000
+_heartRate:0
