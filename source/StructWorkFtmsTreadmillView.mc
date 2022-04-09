@@ -1,7 +1,7 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 
-class GarminTreadmillView extends Ui.DataField {
+class StructWorkFtmsTreadmillView extends Ui.DataField {
 
     hidden var _treadmillProfile;
     hidden var elapsedTime = 0; 
@@ -10,7 +10,7 @@ class GarminTreadmillView extends Ui.DataField {
 
     function initialize() {
         DataField.initialize();
-        _treadmillProfile = new TreadmillProfile();
+        _treadmillProfile = new BasicFtmsTreadmill();
         _treadmillProfile.scanFor(_treadmillProfile.FITNESS_MACHINE_SERVICE);
         _fitContributor = new FitContributor(self);
     }

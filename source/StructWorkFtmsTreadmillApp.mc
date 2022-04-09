@@ -1,7 +1,7 @@
 using Toybox.Application as App;
 using Toybox.BluetoothLowEnergy as Ble;
 
-class GarminTreadmillApp extends App.AppBase {
+class StructWorkFtmsTreadmillApp extends App.AppBase {
 
     function initialize() {
         AppBase.initialize();
@@ -17,7 +17,7 @@ class GarminTreadmillApp extends App.AppBase {
 
     //! Return the initial view of your application here
     function getInitialView() {
-        return [ new GarminTreadmillView() ];
+        return [ new StructWorkFtmsTreadmillView() ];
     }   
 
 }

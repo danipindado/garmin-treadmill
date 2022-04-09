@@ -1,10 +1,9 @@
-using Toybox.System as Sys;
-using Toybox.WatchUi;
 using Toybox.BluetoothLowEnergy as Ble;
-using Toybox.Lang;
 
-class TreadmillProfile
+class BasicFtmsTreadmill
 {
+    hidden const DEVICE_NAME = "Domyos-TC-0751";
+
     private var _bleDelegate;
 
     var _device;
@@ -44,7 +43,6 @@ class TreadmillProfile
         return Ble.longToUuid(0x0000000000001000l + ((uuid & 0xffff).toLong() << 32), 0x800000805f9b34fbl);
     }
     
-    hidden const DEVICE_NAME = "Domyos-TC-0751";
     public const FITNESS_MACHINE_SERVICE                = wordToUuid(0x1826);
     public const TREADMILL_DATA_CHARACTERISTIC          = wordToUuid(0x2acd);
     public const FITNESS_MACHINE_FEATURE_CHARACTERISTIC = wordToUuid(0x2acc);
@@ -152,14 +150,14 @@ class TreadmillProfile
     {
         System.println("initialize");
         Ble.registerProfile(_fitnessProfileDef);
-        _bleDelegate = new TreadmillDelegate(self);  //pass it this
+        _bleDelegate = new FtmsTreadmillBleDelegate(self);  //pass it this
         Ble.setDelegate(_bleDelegate);
      
     }
     
     private function activateNextNotification() 
     {
-        System.println("TreadmillProfile.activateNextNotification");
+        System.println("BasicFtmsTreadmill.activateNextNotification");
         var service = _device.getService(_parent.FITNESS_MACHINE_SERVICE);    
         var characteristic = service.getCharacteristic(_parent.TREADMILL_DATA_CHARACTERISTIC);
         var cccd = characteristic.getDescriptor(Ble.cccdUuid());
@@ -195,7 +193,7 @@ class TreadmillProfile
 
     function onCharacteristicWrite(char, value)    //called after write is complete
     {
-        System.println("TreadmillProfile.onCharacteristicWrite");
+        System.println("BasicFtmsTreadmill.onCharacteristicWrite");
         System.println("**callback characteristic Write.  SI: " + stack.size() + "Characteristic: " + char + ".  Value: " + value);
         if (stack.size() == 0) 
         {
@@ -358,7 +356,7 @@ class TreadmillProfile
     
     function onConnectedStateChanged(device, state)
     {
-        System.println("TreadmillProfile.onConnectedStateChanged");
+        System.println("BasicFtmsTreadmill.onConnectedStateChanged");
         if (state == Ble.CONNECTION_STATE_CONNECTED)
         {
             _isConnected = true;
@@ -392,7 +390,7 @@ class TreadmillProfile
 
     function onScanResults(scanResults)
     {
-        System.println("TreadmillProfile.onScanResults");
+        System.println("BasicFtmsTreadmill.onScanResults");
         
     	for( var result = scanResults.next(); result != null; result = scanResults.next()) 
         {
@@ -437,85 +435,5 @@ function onDescriptorWrite(descriptor, status)
    
     */
 
-}
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-class TreadmillDelegate extends Ble.BleDelegate 
-{
-    
-    var _parent = null;
-    
-    function initialize(parent) 
-    {
-        BleDelegate.initialize();
-        _parent = parent;
-        System.println("BleDelegate.initialize");
-    }
-    
-    function onScanResults(scanResults) 
-    {
-        System.println("BleDelegate.onScanResults");
-        if (_parent != null)
-        {
-            _parent.onScanResults(scanResults);
-        }
-    }
-    
-    function onConnectedStateChanged(device, state) 
-    {
-        System.println("BleDelegate.onConnectedStateChanged");
-        if (_parent != null)
-        {
-            _parent.onConnectedStateChanged(device, state);
-        }
-    }
-
-    function onCharacteristicChanged(char, value) 
-    {
-        System.println("BleDelegate.onCharacteristicChanged");
-        BleDelegate.onCharacteristicChanged(char, value);
-        if (_parent != null)
-        {
-            _parent.onCharacteristicChanged(char, value);
-        }
-    }
-
-    function onCharacteristicRead(char, value) 
-    {
-        System.println("BleDelegate.onCharacteristicRead");
-        BleDelegate.onCharacteristicRead(char, value);
-        if (_parent != null)
-        {
-            _parent.onCharacteristicRead(char, value);
-        }
-    }
-
-    function onCharacteristicWrite(char, value) 
-    {
-        System.println("BleDelegate.onCharacteristicWrite");
-        BleDelegate.onCharacteristicChanged(char, value);
-        
-        if (_parent != null)
-        {
-            _parent.onCharacteristicWrite(char, value);
-        }
-    }
-
-    function onDescriptorWrite(descriptor, status) 
-    {
-        System.println("BleDelegate.onDescriptorWrite");
-        if (_parent != null)
-        {        
-            _parent.onDescriptorWrite(descriptor, status);
-        }
-    }
-
-    function onDescriptorRead(descriptor, status) 
-    {
-        System.println("BleDelegate.onDescriptorRead");
-        var q = 42;
-        
-    }
 }
 
