@@ -9,3 +9,5 @@ https://github.com/lefty01/ESP32_TTGO_FTMS/blob/main/README.md => ftms treadmill
 
 https://www.bluetooth.com/specifications/assigned-numbers/ => https://btprodspecificationrefs.blob.core.windows.net/assigned-values/16-bit%20UUID%20Numbers%20Document.pdf
 https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/td-0000001050147077-V5 Treadmill Data characteristic
+
+https://forums.garmin.com/members/travis.connectiq @ https://forums.garmin.com/developer/connect-iq/f/discussion/238571/has-anyone-used-the-activity-workoutstep-details-available-in-3-2/1218053#1218053 => structured workouts

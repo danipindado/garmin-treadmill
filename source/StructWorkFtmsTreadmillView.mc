@@ -43,9 +43,128 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
         // lapStartDistance = elapsedDistance;
     }
 
+    function dumpValue(depth, label, value, lines) {
+        var s = "";
+
+       for (var i = 0; i < depth; ++i) {
+            s += " ";
+        }
+
+        lines.add(Lang.format("$1$$2$: $3$", [ s, label, value ]));
+    }
+
+    function dumpEnumValue(depth, label, value, names, lines) {
+        if (0 <= value && value < names.size()) {
+            value = names[value];
+        }
+        else {
+            value = "INVALID";
+        }
+
+        dumpValue(depth, label, value, lines);
+    }
+
+    function dumpWorkoutStep(depth, field, workoutStep, lines) {
+        dumpValue(depth, field, workoutStep, lines);
+        depth += 1;
+
+        if (workoutStep != null) {
+            if (workoutStep has :durationType) {
+                dumpEnumValue(depth, "durationType", workoutStep.durationType, DURATION_NAMES, lines);
+            }
+            if (workoutStep has :durationValue) {
+                dumpValue(depth, "durationValue", workoutStep.durationValue, lines);
+            }
+            if (workoutStep has :targetType) {
+                dumpEnumValue(depth, "targetType", workoutStep.targetType, TARGET_NAMES, lines);
+            }
+            if (workoutStep has :targetValueLow) {
+                dumpValue(depth, "targetValueLow", workoutStep.targetValueLow, lines);
+            }
+            if (workoutStep has :targetValueHigh) {
+                dumpValue(depth, "targetValueHigh", workoutStep.targetValueHigh, lines);
+            }
+        }
+    }
+
+    function dumpWorkoutIntervalStep(depth, name, intervalStep, lines) {
+        dumpValue(depth, name, intervalStep, lines);
+        depth += 1;
+
+        if (intervalStep != null) {
+            if (intervalStep has :activeStep) {
+                dumpWorkoutStep(depth, "activeStep", intervalStep.activeStep, lines);
+            }
+            if (intervalStep has :repititionNumber) {
+                dumpValue(depth, "repititionNumber", intervalStep.repititionNumber, lines);
+            }
+            if (intervalStep has :restStep) {
+                dumpWorkoutStep(depth, "restStep", intervalStep.restStep, lines);
+            }
+        }
+    }
+
+    function dumpWorkoutStepInfo(depth, workoutStepInfo, lines) {
+        dumpValue(depth, "workoutStepInfo", workoutStepInfo, lines);
+        depth += 1;
+
+        if (workoutStepInfo != null) {
+            if (workoutStepInfo has :intensity) {
+                dumpEnumValue(depth, "intensity", workoutStepInfo.intensity, INTENSITY_NAMES, lines);
+            }
+            if (workoutStepInfo has :name) {
+                dumpValue(depth, "name", workoutStepInfo.name, lines);
+            }
+            if (workoutStepInfo has :notes) {
+                dumpValue(depth, "notes", workoutStepInfo.notes, lines);
+            }
+            if (workoutStepInfo has :sport) {
+                dumpEnumValue(depth, "sport", workoutStepInfo.sport, SPORT_NAMES, lines);
+            }
+            if (workoutStepInfo has :subSport) {
+                dumpEnumValue(depth, "subSport", workoutStepInfo.subSport, SUB_SPORT_NAMES, lines);
+            }
+            if (workoutStepInfo has :step) {
+                if (workoutStepInfo.step instanceof Activity.WorkoutStep) {
+                    dumpWorkoutStep(depth, "workoutStep", workoutStepInfo.step, lines);
+                }
+                else {
+                    dumpWorkoutIntervalStep(depth, "workoutIntervalStep", workoutStepInfo.step, lines);
+                }
+            }
+        }
+    }
+
+    function onWorkoutStarted() {
+        _step = 1;
+        _lines = [];
+
+        if (Activity has :getCurrentWorkoutStep) {
+            var workoutStepInfo = Activity.getCurrentWorkoutStep();
+            dumpWorkoutStepInfo(1, workoutStepInfo, _lines);
+        }
+        if (Activity has :getNextWorkoutStep) {
+            var workoutStepInfo = Activity.getNextWorkoutStep();
+            dumpWorkoutStepInfo(1, workoutStepInfo, _lines);
+        }
+
+        WatchUi.requestUpdate();
+    }
+
     function onWorkoutStepComplete()
     {
         onTimerLap();
+        if (Activity has :getCurrentWorkoutStep) {
+            var workoutStepInfo = Activity.getCurrentWorkoutStep();
+            dumpWorkoutStepInfo(1, workoutStepInfo, _lines);
+        }
+        if (Activity has :getNextWorkoutStep) {
+            var workoutStepInfo = Activity.getNextWorkoutStep();
+            dumpWorkoutStepInfo(1, workoutStepInfo, _lines);
+        }
+
+        WatchUi.requestUpdate();
+
     }
     
     // Display the value you computed here. This will be called
