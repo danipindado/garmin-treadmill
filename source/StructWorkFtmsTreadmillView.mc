@@ -1,26 +1,28 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 
-class StructWorkFtmsTreadmillView extends Ui.DataField {
+class StructWorkFtmsTreadmillView extends Ui.DataField 
+{
 
     hidden var _treadmillProfile;
     hidden var elapsedTime = 0; 
     hidden var lastComputeTime = 0;
     var _fitContributor;
 
-    function initialize() {
+    function initialize() 
+    {
         DataField.initialize();
         _treadmillProfile = new BasicFtmsTreadmill();
         _treadmillProfile.scanFor(_treadmillProfile.FITNESS_MACHINE_SERVICE);
         _fitContributor = new FitContributor(self);
     }
-            
+    
     // The given info object contains all the current workout information.
     // Calculate a value and save it locally in this method.
     // Note that compute() and onUpdate() are asynchronous, and there is no
     // guarantee that compute() will be called before onUpdate().
-    function compute(info) {
-            
+    function compute(info) 
+    {   
         elapsedTime = info.timerTime != null ? info.timerTime : 0;
         // hrValue = info.currentHeartRate != null ? info.currentHeartRate : 0;        
         if(elapsedTime != lastComputeTime)
@@ -39,117 +41,142 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
         // System.println("averagePower: " + averagePower);
     }
     
-    function onTimerLap(){
+    function onTimerLap()
+    {
         // lapStartDistance = elapsedDistance;
     }
 
-    function dumpValue(depth, label, value) {
-        var s = "";
-
-       for (var i = 0; i < depth; ++i) {
-            s += " ";
-        }
-
-    System.println("label: " + label);
-    System.println("value: " + value);
-
+    function dumpValue( label, value) 
+    {
+        System.println("label: " + label);
+        System.println("value: " + value);
     }
 
-    function dumpEnumValue(depth, label, value, names) {
-        if (0 <= value && value < names.size()) {
+    function dumpEnumValue( label, value, names) 
+    {
+        if (0 <= value && value < names.size()) 
+        {
             value = names[value];
         }
-        else {
+        else 
+        {
             value = "INVALID";
         }
 
-        dumpValue(depth, label, value);
+        dumpValue( label, value);
     }
 
-    function dumpWorkoutStep(depth, field, workoutStep) {
-        dumpValue(depth, field, workoutStep);
-        depth += 1;
+    function dumpWorkoutStep( field, workoutStep) 
+    {
+        dumpValue( field, workoutStep);
 
-        if (workoutStep != null) {
-            if (workoutStep has :durationType) {
-                dumpEnumValue(depth, "durationType", workoutStep.durationType, DURATION_NAMES);
+        if (workoutStep != null) 
+        {
+            if (workoutStep has :durationType) 
+            {
+                dumpEnumValue( "durationType", workoutStep.durationType, DURATION_NAMES);
             }
-            if (workoutStep has :durationValue) {
-                dumpValue(depth, "durationValue", workoutStep.durationValue);
+            if (workoutStep has :durationValue) 
+            {
+                dumpValue( "durationValue", workoutStep.durationValue);
             }
-            if (workoutStep has :targetType) {
-                dumpEnumValue(depth, "targetType", workoutStep.targetType, TARGET_NAMES);
+            if (workoutStep has :targetType) 
+            {
+                dumpEnumValue( "targetType", workoutStep.targetType, TARGET_NAMES);
             }
-            if (workoutStep has :targetValueLow) {
-                dumpValue(depth, "targetValueLow", workoutStep.targetValueLow);
+            if (workoutStep has :targetValueLow) 
+            {
+                dumpValue( "targetValueLow", workoutStep.targetValueLow);
             }
-            if (workoutStep has :targetValueHigh) {
-                dumpValue(depth, "targetValueHigh", workoutStep.targetValueHigh);
+            if (workoutStep has :targetValueHigh) 
+            {
+                dumpValue( "targetValueHigh", workoutStep.targetValueHigh);
             }
         }
     }
 
-    function dumpWorkoutIntervalStep(depth, name, intervalStep) {
-        dumpValue(depth, name, intervalStep);
-        depth += 1;
+    function dumpWorkoutIntervalStep( name, intervalStep) 
+    {
+        dumpValue( name, intervalStep);
 
-        if (intervalStep != null) {
-            if (intervalStep has :activeStep) {
-                dumpWorkoutStep(depth, "activeStep", intervalStep.activeStep);
+        if (intervalStep != null) 
+        {
+            if (intervalStep has :activeStep) 
+            {
+                dumpWorkoutStep( "activeStep", intervalStep.activeStep);
             }
-            if (intervalStep has :repititionNumber) {
-                dumpValue(depth, "repititionNumber", intervalStep.repititionNumber);
+            if (intervalStep has :repititionNumber) 
+            {
+                dumpValue( "repititionNumber", intervalStep.repititionNumber);
             }
-            if (intervalStep has :restStep) {
-                dumpWorkoutStep(depth, "restStep", intervalStep.restStep);
+            if (intervalStep has :restStep) 
+            {
+                dumpWorkoutStep( "restStep", intervalStep.restStep);
             }
         }
     }
 
-    function dumpWorkoutStepInfo(depth, workoutStepInfo) {
-        dumpValue(depth, "workoutStepInfo", workoutStepInfo);
-        depth += 1;
+    function dumpWorkoutStepInfo(workoutStepInfo) 
+    {
+        dumpValue( "workoutStepInfo", workoutStepInfo);
 
-        if (workoutStepInfo != null) {
-            if (workoutStepInfo has :intensity) {
-                dumpEnumValue(depth, "intensity", workoutStepInfo.intensity, INTENSITY_NAMES);
-            }
-            if (workoutStepInfo has :name) {
-                dumpValue(depth, "name", workoutStepInfo.name);
-            }
-            if (workoutStepInfo has :notes) {
-                dumpValue(depth, "notes", workoutStepInfo.notes);
-            }
-            if (workoutStepInfo has :sport) {
-                dumpEnumValue(depth, "sport", workoutStepInfo.sport, SPORT_NAMES);
-            }
-            if (workoutStepInfo has :subSport) {
-                dumpEnumValue(depth, "subSport", workoutStepInfo.subSport, SUB_SPORT_NAMES);
-            }
-            if (workoutStepInfo has :step) {
-                if (workoutStepInfo.step instanceof Activity.WorkoutStep) {
-                    dumpWorkoutStep(depth, "workoutStep", workoutStepInfo.step);
+        if (workoutStepInfo != null) 
+        {
+
+            var step;
+            var targetSpeed = 0.0; 
+
+            if (workoutStepInfo has :step) 
+            {
+                if (workoutStepInfo.step instanceof Activity.WorkoutStep) 
+                {
+                    step = Activity.WorkoutStep;
                 }
-                else {
-                    dumpWorkoutIntervalStep(depth, "workoutIntervalStep", workoutStepInfo.step);
+                else 
+                {
+                    if (workoutStepInfo.step has :activeStep) 
+                    {
+                        step = workoutStepInfo.step.activeStep;
+                    }
+                    else
+                    {
+                        System.println("unexpected workoutStepInfo");
+                        return;
+                    }
+                }
+
+                if (step has :targetType) 
+                {
+                    if( step.targetType == "SPEED" || step.targetType == "SPEED_LAP")
+                    {
+                        if (step has :targetValueLow) 
+                        {
+                            System.println("speed.targetValueLow:"+speed.targetValueLow);
+                            targetSpeed = speed.targetValueLow;
+                        }
+                        if (step has :targetValueHigh) 
+                        {
+                            System.println("speed.targetValueHigh:"+speed.targetValueHigh);
+                            targetSpeed = (targetSpeed + speed.targetValueHigh)/ 2.0;
+                        }
+
+                        System.println("targetSpeed:"+targetSpeed);
+                        _treadmillProfile.setSpeed(targetSpeed);
+                    }
                 }
             }
         }
     }
 
-    function onWorkoutStarted() {
+    function onWorkoutStarted() 
+    {
         System.println("onWorkoutStarted");
-        _step = 1;
 
-        if (Activity has :getCurrentWorkoutStep) {
+        if (Activity has :getCurrentWorkoutStep) 
+        {
             System.println("has :getCurrentWorkoutStep");
             var workoutStepInfo = Activity.getCurrentWorkoutStep();
-            dumpWorkoutStepInfo(1, workoutStepInfo);
-        }
-        if (Activity has :getNextWorkoutStep) {
-            System.println("has :getNextWorkoutStep");
-            var workoutStepInfo = Activity.getNextWorkoutStep();
-            // dumpWorkoutStepInfo(1, workoutStepInfo);
+            dumpWorkoutStepInfo(workoutStepInfo);
         }
 
         WatchUi.requestUpdate();
@@ -159,15 +186,11 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
     {
         System.println("onWorkoutStepComplete");
         onTimerLap();
-        if (Activity has :getCurrentWorkoutStep) {
+        if (Activity has :getCurrentWorkoutStep) 
+        {
             System.println("has :getCurrentWorkoutStep");
             var workoutStepInfo = Activity.getCurrentWorkoutStep();
-            dumpWorkoutStepInfo(1, workoutStepInfo);
-        }
-        if (Activity has :getNextWorkoutStep) {
-            System.println("has :getNextWorkoutStep");
-            var workoutStepInfo = Activity.getNextWorkoutStep();
-            // dumpWorkoutStepInfo(1, workoutStepInfo);
+            dumpWorkoutStepInfo(workoutStepInfo);
         }
 
         WatchUi.requestUpdate();
@@ -176,23 +199,19 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
     
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
-    function onUpdate(dc) {
-        
+    function onUpdate(dc) 
+    {
         var width = dc.getWidth();
         var height = dc.getHeight();
-        
         var backgroundColor = getBackgroundColor();
         var valueColor = backgroundColor == Graphics.COLOR_WHITE ? Graphics.COLOR_BLACK : Graphics.COLOR_WHITE;
         var labelColor = backgroundColor == Graphics.COLOR_WHITE ? Graphics.COLOR_DK_GRAY : Graphics.COLOR_LT_GRAY;
         var valueSize = Graphics.FONT_LARGE;
         var labelSize = Graphics.FONT_TINY;
-        
         var distanceYPosition = (height > 214) ? height * .04 : height * .03;
-        
         // Set the background color
         dc.setColor(backgroundColor, backgroundColor);
         dc.fillRectangle(0, 0, width, height);
-        
         // Draw grid
         dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(2);
@@ -200,7 +219,6 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
         dc.drawLine(0, height * .5, width, height * .5);
         dc.drawLine(0, height * .8, width, height * .8);
         dc.drawLine(width * .5, height * .2, width * .5, height * .8);
-        
         // this is going up here because we're gonna shift some stuff based on distance
         // var distanceUnit = "km";
         // if(System.getDeviceSettings().distanceUnits == System.UNIT_STATUTE)
@@ -208,10 +226,8 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
         //     distanceValue = elapsedDistance * 0.000621371;
         //     distanceUnit = "mi";
         // }
-        
         // var distanceLabelX = (distanceValue > 10.0) ? width * .675 : width * .6375;
         // var distanceXPosition = (distanceValue > 10.0) ? width / 2 : width * .4625;
-        
         // Draw Labels
         dc.setColor(labelColor, Graphics.COLOR_TRANSPARENT);
         // dc.drawText(distanceLabelX, height * .0725, labelSize, distanceUnit, Graphics.TEXT_JUSTIFY_CENTER);
@@ -221,11 +237,8 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
         dc.drawText(width * .25, height * .52, labelSize, "Avg. Power", Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(width * .75, height * .52, labelSize, "Lap Power", Graphics.TEXT_JUSTIFY_CENTER);
         dc.drawText(width * .33, height * .82, labelSize, "HR", Graphics.TEXT_JUSTIFY_CENTER);
-        
         dc.setColor(valueColor, Graphics.COLOR_TRANSPARENT);
-                
         var tmp = 10.0;
-        
         var distanceText;
         distanceText = tmp.format("%d");
         dc.drawText(width / 2, height * .04, valueSize, distanceText, Graphics.TEXT_JUSTIFY_CENTER);
@@ -233,46 +246,48 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
         var timeText;
         timeText = tmp.format("%d");
         dc.drawText(width * .25, height * .31, Graphics.FONT_MEDIUM, timeText, Graphics.TEXT_JUSTIFY_CENTER);
-        
         var powerText;
-              
-        if (tmp == 0) {
+        if (tmp == 0) 
+        {
             powerText = "--";
-        } else {
+        } 
+        else 
+        {
             powerText = tmp.format("%d");
         }
-        
         dc.drawText(width * .75, height * .315, valueSize, powerText, Graphics.TEXT_JUSTIFY_CENTER);
         //System.println("power: " + currentPower);
 
         var lapPowerText;
         lapPowerText = tmp.format("%d");        
         dc.drawText(width * .75, height * .615, valueSize, lapPowerText, Graphics.TEXT_JUSTIFY_CENTER);
-        
         var avgPowerText;
         avgPowerText = tmp.format("%d");        
         dc.drawText(width * .25, height * .615, valueSize, avgPowerText, Graphics.TEXT_JUSTIFY_CENTER);
         // System.println("Avg. Power " + averagePower);
-        
         var hrText;
         hrText = tmp.format("%d");        
         dc.drawText(width / 2, height * .82, valueSize, hrText, Graphics.TEXT_JUSTIFY_CENTER);
 
     }
 
-    function onTimerStart() {
+    function onTimerStart() 
+    {
         _fitContributor.setTimerRunning(true);
     }
 
-    function onTimerStop() {
+    function onTimerStop() 
+    {
         _fitContributor.setTimerRunning(false);
     }
 
-    function onTimerPause() {
+    function onTimerPause() 
+    {
         _fitContributor.setTimerRunning(false);
     }
 
-    function onTimerResume() {
+    function onTimerResume() 
+    {
         _fitContributor.setTimerRunning(true);
     }    
 

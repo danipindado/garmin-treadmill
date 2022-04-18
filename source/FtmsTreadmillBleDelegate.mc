@@ -17,24 +17,6 @@ class FtmsTreadmillBleDelegate extends Ble.BleDelegate
         System.println("BleDelegate.initialize");
     }
     
-    function onScanResults(scanResults) 
-    {
-        System.println("BleDelegate.onScanResults");
-        if (_parent != null)
-        {
-            _parent.onScanResults(scanResults);
-        }
-    }
-    
-    function onConnectedStateChanged(device, state) 
-    {
-        System.println("BleDelegate.onConnectedStateChanged");
-        if (_parent != null)
-        {
-            _parent.onConnectedStateChanged(device, state);
-        }
-    }
-
     function onCharacteristicChanged(char, value) 
     {
         System.println("BleDelegate.onCharacteristicChanged");
@@ -66,6 +48,24 @@ class FtmsTreadmillBleDelegate extends Ble.BleDelegate
         }
     }
 
+    function onConnectedStateChanged(device, state) 
+    {
+        System.println("BleDelegate.onConnectedStateChanged");
+        if (_parent != null)
+        {
+            _parent.onConnectedStateChanged(device, state);
+        }
+    }
+
+    function onDescriptorRead(descriptor, status) 
+    {
+        System.println("BleDelegate.onDescriptorRead");
+        if (_parent != null)
+        {        
+            _parent.onDescriptorRead(descriptor, status);
+        }        
+    }
+
     function onDescriptorWrite(descriptor, status) 
     {
         System.println("BleDelegate.onDescriptorWrite");
@@ -75,11 +75,31 @@ class FtmsTreadmillBleDelegate extends Ble.BleDelegate
         }
     }
 
-    function onDescriptorRead(descriptor, status) 
+    function onProfileRegister(uuid, status) 
     {
-        System.println("BleDelegate.onDescriptorRead");
-        var q = 42;
-        
+        System.println("BleDelegate.onProfileRegister");
+        if (_parent != null)
+        {
+            _parent.onProfileRegister(uuid, status);
+        }
+    }
+
+    function onScanResults(scanResults) 
+    {
+        System.println("BleDelegate.onScanResults");
+        if (_parent != null)
+        {
+            _parent.onScanResults(scanResults);
+        }
+    }
+    
+    function onScanStateChange(scanState, status)
+    {
+        System.println("BleDelegate.onScanStateChange");
+        if (_parent != null)
+        {
+            _parent.onScanStateChange(scanState, status);
+        }
     }
 }
 

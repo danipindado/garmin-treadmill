@@ -155,16 +155,6 @@ class BasicFtmsTreadmill
      
     }
     
-    private function activateNextNotification() 
-    {
-        System.println("BasicFtmsTreadmill.activateNextNotification");
-        var service = _device.getService(_parent.FITNESS_MACHINE_SERVICE);    
-        var characteristic = service.getCharacteristic(_parent.TREADMILL_DATA_CHARACTERISTIC);
-        var cccd = characteristic.getDescriptor(Ble.cccdUuid());
-        cccd.requestWrite([0x01, 0x00]b);
-        
-    }
-
     function pushWrite(obj)   //need this so BLE doesn't throw exception if two writerequests come-in before BLE can process them
     {    
         stack.add(obj);
@@ -189,32 +179,6 @@ class BasicFtmsTreadmill
         {
             System.println("EXCEPTION: " + ex.getErrorMessage());
         }
-    }
-
-    function onCharacteristicWrite(char, value)    //called after write is complete
-    {
-        System.println("BasicFtmsTreadmill.onCharacteristicWrite");
-        System.println("**callback characteristic Write.  SI: " + stack.size() + "Characteristic: " + char + ".  Value: " + value);
-        if (stack.size() == 0) 
-        {
-            System.println("onCharasteristic write called in error si=0");
-            return;
-        }
-        writeBusy = false;
-        
-        stack = stack.slice(1,null);
-        if (stack.size() > 0) {handleStack();}
-       //pop-off
-        var ch = char;
-        var v = value;
-        
-    }
-
-    function onCharacteristicRead(char, value) 
-    {
-        var ch = char;
-        var v = value;
-        
     }
 
     function onCharacteristicChanged(char, value)
@@ -325,35 +289,33 @@ class BasicFtmsTreadmill
             }            
         }
     }
-    
-    function setSpeed (speed)
+
+    function onCharacteristicRead(char, value) 
     {
-        System.println("setSpeed");
-
-        // https://github.com/cagnulein/qdomyos-zwift/blob/a8935e11f1bce424094101b6b668ec600a1ea409/src/shuaa5treadmill.cpp#L145
-        if (speed < 0.0) {speed = 0.0;}
-        if (speed > 14.0) {speed = 14.0;}
+        var ch = char;
+        var v = value;
         
-        var i = [FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETSPEED, 0x00, 0x00];
-        var lsb = speed * 100.0;
-        var msb = speed * 100.0 / 256.0; 
-        i[1] = (0x00FF)&(lsb.toNumber());
-        i[2] = (0x00FF)&(msb.toNumber());
-
-        pushWrite(i);
     }
 
-    function setIncline (incline)
+    function onCharacteristicWrite(char, value)    //called after write is complete
     {
-        var incl = incline * 10.0;
-        var long1 = incl.toLong();//convert to kph and multiply by one humdred
-        var b1 = [FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETINCLINATION,0,0]b;   //starting with 2 means set speed
-        b1.encodeNumber(long1,Lang.NUMBER_FORMAT_UINT16,{:offset=>1,:endianness=>Lang.ENDIAN_LITTLE});
+        System.println("BasicFtmsTreadmill.onCharacteristicWrite");
+        System.println("**callback characteristic Write.  SI: " + stack.size() + "Characteristic: " + char + ".  Value: " + value);
+        if (stack.size() == 0) 
+        {
+            System.println("onCharasteristic write called in error si=0");
+            return;
+        }
+        writeBusy = false;
         
-           System.println("incline");
-           pushWrite(b1);
+        stack = stack.slice(1,null);
+        if (stack.size() > 0) {handleStack();}
+       //pop-off
+        var ch = char;
+        var v = value;
+        
     }
-    
+
     function onConnectedStateChanged(device, state)
     {
         System.println("BasicFtmsTreadmill.onConnectedStateChanged");
@@ -375,17 +337,21 @@ class BasicFtmsTreadmill
             System.println("CONNECTION_STATE_DISCONNECTED");
         }
     }
-    
-    private function contains(iter, obj) 
+
+    function onDescriptorRead(descriptor, status) 
     {
-        for(var uuid = iter.next(); uuid != null; uuid = iter.next()) 
-        {
-            if(uuid.equals(obj)) 
-            {
-                return true;
-            }
-        }
-        return false;
+        System.println("BleDelegate.onDescriptorRead");
+        
+    }
+
+    function onDescriptorWrite(descriptor, status) 
+    {
+        System.println("BleDelegate.onDescriptorWrite");
+    }
+
+    function onProfileRegister(uuid, status) 
+    {
+        System.println("BleDelegate.onProfileRegister");
     }
 
     function onScanResults(scanResults)
@@ -402,38 +368,45 @@ class BasicFtmsTreadmill
         }
     }
 
-    function onDescriptorWrite(descriptor, status) 
+    function onScanStateChange(scanState, status)
     {
-
+        System.println("BleDelegate.onScanStateChange");
     }
     
-    /*
-    
-function onDescriptorWrite(descriptor, status) 
+    function setSpeed (speed)
     {
-        if(Ble.cccdUuid().equals(descriptor.getUuid())) 
-        {
-            processCccdWrite(status);
-        }
-        else
-        {
+        System.println("setSpeed");
+
+        // https://github.com/cagnulein/qdomyos-zwift/blob/a8935e11f1bce424094101b6b668ec600a1ea409/src/shuaa5treadmill.cpp#L145
+        if (speed < 0.0) {speed = 0.0;}
+        if (speed > 14.0) {speed = 14.0;}
         
-        }
+        var i = [FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETSPEED, 0x00, 0x00];
+        var lsb = speed * 100.0;
+        var msb = speed * 100.0 / 256.0; 
+        i[1] = (0x00FF)&(lsb.toNumber());
+        i[2] = (0x00FF)&(msb.toNumber());
+
+        pushWrite(i);
     }
 
-    private function processCccdWrite(status) 
+    function setIncline (incline)
     {
-        if(_pendingNotifies.size() > 1) 
-        {
-            _pendingNotifies = _pendingNotifies.slice(1,_pendingNotifies.size());
-            activateNextNotification();
-        }
-        else {
-            _pendingNotifies = [];
-        }
+        System.println("setIncline");
+        // todo
     }
-   
-    */
-
+    
+    
+    private function contains(iter, obj) 
+    {
+        for(var uuid = iter.next(); uuid != null; uuid = iter.next()) 
+        {
+            if(uuid.equals(obj)) 
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
