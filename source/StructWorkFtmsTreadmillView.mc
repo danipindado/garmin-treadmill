@@ -1,5 +1,6 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
+using Toybox.Activity as activity;
 
 class StructWorkFtmsTreadmillView extends Ui.DataField 
 {
@@ -130,10 +131,12 @@ class StructWorkFtmsTreadmillView extends Ui.DataField
             {
                 if (workoutStepInfo.step instanceof Activity.WorkoutStep) 
                 {
-                    step = Activity.WorkoutStep;
+                    System.println("Activity.WorkoutStep");
+                    step = workoutStepInfo.step;
                 }
                 else 
                 {
+                    System.println("!Activity.WorkoutStep");
                     if (workoutStepInfo.step has :activeStep) 
                     {
                         step = workoutStepInfo.step.activeStep;
@@ -145,24 +148,34 @@ class StructWorkFtmsTreadmillView extends Ui.DataField
                     }
                 }
 
+
                 if (step has :targetType) 
-                {
-                    if( step.targetType == "SPEED" || step.targetType == "SPEED_LAP")
+                {                    
+                    System.println("has :targetType");
+                    System.println(step.targetType);
+                    System.println(activity.WORKOUT_STEP_TARGET_SPEED);
+                    System.println(activity.WORKOUT_STEP_TARGET_SPEED_LAP);
+
+                    if( step.targetType == activity.WORKOUT_STEP_TARGET_SPEED || step.targetType == activity.WORKOUT_STEP_TARGET_SPEED_LAP)
                     {
                         if (step has :targetValueLow) 
                         {
-                            System.println("speed.targetValueLow:"+speed.targetValueLow);
-                            targetSpeed = speed.targetValueLow;
+                            System.println("speed.targetValueLow:"+step.targetValueLow);
+                            targetSpeed = step.targetValueLow;
                         }
                         if (step has :targetValueHigh) 
                         {
-                            System.println("speed.targetValueHigh:"+speed.targetValueHigh);
-                            targetSpeed = (targetSpeed + speed.targetValueHigh)/ 2.0;
+                            System.println("speed.targetValueHigh:"+step.targetValueHigh);
+                            targetSpeed = (targetSpeed + step.targetValueHigh)/ 2.0;
                         }
 
                         System.println("targetSpeed:"+targetSpeed);
                         _treadmillProfile.setSpeed(targetSpeed);
                     }
+                }
+                else
+                {
+                    System.println("!has :targetType");
                 }
             }
         }

@@ -163,8 +163,9 @@ class BasicFtmsTreadmill
 
     function handleStack()
     {
-        if (stack.size() == 0) {return;} // nothing to do
-        if (writeBusy == true) {return;}// already busy.  nothing to do
+        if(_device == null) {return;}       // no device connected
+        if (stack.size() == 0) {return;}    // nothing to do
+        if (writeBusy == true) {return;}    // already busy.  nothing to do
         // https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/fmcp-0000001050147089
         // https://github.com/cagnulein/qdomyos-zwift/blob/5bf7864efb074d59179813bd6b331e8bfb75ed8a/src/technogymmyruntreadmill.cpp#L225
         var characteristic = _device.getService(FITNESS_MACHINE_SERVICE).getCharacteristic(TREADMILL_CONTROL_POINT);
