@@ -1,0 +1,57 @@
+initialize
+BleDelegate.initialize
+ScanMenuDelegate.starting scan
+onWorkoutStepComplete
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 132
+label: intensity
+value: ACTIVE
+label: name
+value:
+label: notes
+value: Run Notes
+label: sport
+value: RUNNING
+label: subSport
+value: INVALID
+label: workoutStep
+value: Obj: 315
+label: durationType
+value: TIME
+label: durationValue
+value: 10.000000
+label: targetType
+value: SPEED
+label: targetValueLow
+value: 0.447000
+label: targetValueHigh
+value: 4.470000
+has :getNextWorkoutStep
+onWorkoutStepComplete
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 132
+label: intensity
+value: COOLDOWN
+label: name
+value:
+label: notes
+value: Cool Down Notes
+label: sport
+value: RUNNING
+label: subSport
+value: INVALID
+label: workoutStep
+value: Obj: 315
+label: durationType
+value: TIME
+label: durationValue
+value: 5.000000
+label: targetType
+value: OPEN
+label: targetValueLow
+value: 0
+label: targetValueHigh
+value: 0
+has :getNextWorkoutStep

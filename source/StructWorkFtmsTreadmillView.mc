@@ -43,17 +43,19 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
         // lapStartDistance = elapsedDistance;
     }
 
-    function dumpValue(depth, label, value, lines) {
+    function dumpValue(depth, label, value) {
         var s = "";
 
        for (var i = 0; i < depth; ++i) {
             s += " ";
         }
 
-        lines.add(Lang.format("$1$$2$: $3$", [ s, label, value ]));
+    System.println("label: " + label);
+    System.println("value: " + value);
+
     }
 
-    function dumpEnumValue(depth, label, value, names, lines) {
+    function dumpEnumValue(depth, label, value, names) {
         if (0 <= value && value < names.size()) {
             value = names[value];
         }
@@ -61,91 +63,93 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
             value = "INVALID";
         }
 
-        dumpValue(depth, label, value, lines);
+        dumpValue(depth, label, value);
     }
 
-    function dumpWorkoutStep(depth, field, workoutStep, lines) {
-        dumpValue(depth, field, workoutStep, lines);
+    function dumpWorkoutStep(depth, field, workoutStep) {
+        dumpValue(depth, field, workoutStep);
         depth += 1;
 
         if (workoutStep != null) {
             if (workoutStep has :durationType) {
-                dumpEnumValue(depth, "durationType", workoutStep.durationType, DURATION_NAMES, lines);
+                dumpEnumValue(depth, "durationType", workoutStep.durationType, DURATION_NAMES);
             }
             if (workoutStep has :durationValue) {
-                dumpValue(depth, "durationValue", workoutStep.durationValue, lines);
+                dumpValue(depth, "durationValue", workoutStep.durationValue);
             }
             if (workoutStep has :targetType) {
-                dumpEnumValue(depth, "targetType", workoutStep.targetType, TARGET_NAMES, lines);
+                dumpEnumValue(depth, "targetType", workoutStep.targetType, TARGET_NAMES);
             }
             if (workoutStep has :targetValueLow) {
-                dumpValue(depth, "targetValueLow", workoutStep.targetValueLow, lines);
+                dumpValue(depth, "targetValueLow", workoutStep.targetValueLow);
             }
             if (workoutStep has :targetValueHigh) {
-                dumpValue(depth, "targetValueHigh", workoutStep.targetValueHigh, lines);
+                dumpValue(depth, "targetValueHigh", workoutStep.targetValueHigh);
             }
         }
     }
 
-    function dumpWorkoutIntervalStep(depth, name, intervalStep, lines) {
-        dumpValue(depth, name, intervalStep, lines);
+    function dumpWorkoutIntervalStep(depth, name, intervalStep) {
+        dumpValue(depth, name, intervalStep);
         depth += 1;
 
         if (intervalStep != null) {
             if (intervalStep has :activeStep) {
-                dumpWorkoutStep(depth, "activeStep", intervalStep.activeStep, lines);
+                dumpWorkoutStep(depth, "activeStep", intervalStep.activeStep);
             }
             if (intervalStep has :repititionNumber) {
-                dumpValue(depth, "repititionNumber", intervalStep.repititionNumber, lines);
+                dumpValue(depth, "repititionNumber", intervalStep.repititionNumber);
             }
             if (intervalStep has :restStep) {
-                dumpWorkoutStep(depth, "restStep", intervalStep.restStep, lines);
+                dumpWorkoutStep(depth, "restStep", intervalStep.restStep);
             }
         }
     }
 
-    function dumpWorkoutStepInfo(depth, workoutStepInfo, lines) {
-        dumpValue(depth, "workoutStepInfo", workoutStepInfo, lines);
+    function dumpWorkoutStepInfo(depth, workoutStepInfo) {
+        dumpValue(depth, "workoutStepInfo", workoutStepInfo);
         depth += 1;
 
         if (workoutStepInfo != null) {
             if (workoutStepInfo has :intensity) {
-                dumpEnumValue(depth, "intensity", workoutStepInfo.intensity, INTENSITY_NAMES, lines);
+                dumpEnumValue(depth, "intensity", workoutStepInfo.intensity, INTENSITY_NAMES);
             }
             if (workoutStepInfo has :name) {
-                dumpValue(depth, "name", workoutStepInfo.name, lines);
+                dumpValue(depth, "name", workoutStepInfo.name);
             }
             if (workoutStepInfo has :notes) {
-                dumpValue(depth, "notes", workoutStepInfo.notes, lines);
+                dumpValue(depth, "notes", workoutStepInfo.notes);
             }
             if (workoutStepInfo has :sport) {
-                dumpEnumValue(depth, "sport", workoutStepInfo.sport, SPORT_NAMES, lines);
+                dumpEnumValue(depth, "sport", workoutStepInfo.sport, SPORT_NAMES);
             }
             if (workoutStepInfo has :subSport) {
-                dumpEnumValue(depth, "subSport", workoutStepInfo.subSport, SUB_SPORT_NAMES, lines);
+                dumpEnumValue(depth, "subSport", workoutStepInfo.subSport, SUB_SPORT_NAMES);
             }
             if (workoutStepInfo has :step) {
                 if (workoutStepInfo.step instanceof Activity.WorkoutStep) {
-                    dumpWorkoutStep(depth, "workoutStep", workoutStepInfo.step, lines);
+                    dumpWorkoutStep(depth, "workoutStep", workoutStepInfo.step);
                 }
                 else {
-                    dumpWorkoutIntervalStep(depth, "workoutIntervalStep", workoutStepInfo.step, lines);
+                    dumpWorkoutIntervalStep(depth, "workoutIntervalStep", workoutStepInfo.step);
                 }
             }
         }
     }
 
     function onWorkoutStarted() {
+        System.println("onWorkoutStarted");
         _step = 1;
-        _lines = [];
 
         if (Activity has :getCurrentWorkoutStep) {
+            System.println("has :getCurrentWorkoutStep");
             var workoutStepInfo = Activity.getCurrentWorkoutStep();
-            dumpWorkoutStepInfo(1, workoutStepInfo, _lines);
+            dumpWorkoutStepInfo(1, workoutStepInfo);
         }
         if (Activity has :getNextWorkoutStep) {
+            System.println("has :getNextWorkoutStep");
             var workoutStepInfo = Activity.getNextWorkoutStep();
-            dumpWorkoutStepInfo(1, workoutStepInfo, _lines);
+            // dumpWorkoutStepInfo(1, workoutStepInfo);
         }
 
         WatchUi.requestUpdate();
@@ -153,14 +157,17 @@ class StructWorkFtmsTreadmillView extends Ui.DataField {
 
     function onWorkoutStepComplete()
     {
+        System.println("onWorkoutStepComplete");
         onTimerLap();
         if (Activity has :getCurrentWorkoutStep) {
+            System.println("has :getCurrentWorkoutStep");
             var workoutStepInfo = Activity.getCurrentWorkoutStep();
-            dumpWorkoutStepInfo(1, workoutStepInfo, _lines);
+            dumpWorkoutStepInfo(1, workoutStepInfo);
         }
         if (Activity has :getNextWorkoutStep) {
+            System.println("has :getNextWorkoutStep");
             var workoutStepInfo = Activity.getNextWorkoutStep();
-            dumpWorkoutStepInfo(1, workoutStepInfo, _lines);
+            // dumpWorkoutStepInfo(1, workoutStepInfo);
         }
 
         WatchUi.requestUpdate();
