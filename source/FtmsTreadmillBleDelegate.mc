@@ -19,7 +19,7 @@ class FtmsTreadmillBleDelegate extends Ble.BleDelegate
     
     function onCharacteristicChanged(char, value) 
     {
-        System.println("BleDelegate.onCharacteristicChanged");
+        // System.println("BleDelegate.onCharacteristicChanged");
         BleDelegate.onCharacteristicChanged(char, value);
         if (_parent != null)
         {

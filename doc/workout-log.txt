@@ -1,57 +1,140 @@
 initialize
 BleDelegate.initialize
 ScanMenuDelegate.starting scan
+BleDelegate.onScanStateChange
+BleDelegate.onScanStateChange
+BleDelegate.onProfileRegister
+BleDelegate.onProfileRegister
+BleDelegate.onScanResults
+BasicFtmsTreadmill.onScanResults
+BleDelegate.onScanStateChange
+BleDelegate.onScanStateChange
+BleDelegate.onConnectedStateChanged
+BasicFtmsTreadmill.onConnectedStateChanged
+CONNECTION_STATE_CONNECTED
+btInit
+handleStack
+characteristic.requestWrite
+EXCEPTION: Operation already in Progress
+handleStack
+writing ongoing
+BleDelegate.onDescriptorWrite
+BleDelegate.onDescriptorWrite
+onWorkoutStarted
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+2
+0
+12
 onWorkoutStepComplete
 has :getCurrentWorkoutStep
 label: workoutStepInfo
-value: Obj: 132
-label: intensity
-value: ACTIVE
-label: name
-value:
-label: notes
-value: Run Notes
-label: sport
-value: RUNNING
-label: subSport
-value: INVALID
-label: workoutStep
-value: Obj: 315
-label: durationType
-value: TIME
-label: durationValue
-value: 10.000000
-label: targetType
-value: SPEED
-label: targetValueLow
-value: 0.447000
-label: targetValueHigh
-value: 4.470000
-has :getNextWorkoutStep
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+0
+0
+12
+speed.targetValueLow:1.639000
+speed.targetValueHigh:1.695000
+targetSpeed:6.001200
+setSpeed
+handleStack
+writing ongoing
 onWorkoutStepComplete
 has :getCurrentWorkoutStep
 label: workoutStepInfo
-value: Obj: 132
-label: intensity
-value: COOLDOWN
-label: name
-value:
-label: notes
-value: Cool Down Notes
-label: sport
-value: RUNNING
-label: subSport
-value: INVALID
-label: workoutStep
-value: Obj: 315
-label: durationType
-value: TIME
-label: durationValue
-value: 5.000000
-label: targetType
-value: OPEN
-label: targetValueLow
-value: 0
-label: targetValueHigh
-value: 0
-has :getNextWorkoutStep
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+0
+0
+12
+speed.targetValueLow:2.703000
+speed.targetValueHigh:2.857000
+targetSpeed:10.008000
+setSpeed
+handleStack
+writing ongoing
+onWorkoutStepComplete
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+2
+0
+12
+initialize
+BleDelegate.initialize
+ScanMenuDelegate.starting scan
+BleDelegate.onScanStateChange
+BleDelegate.onScanStateChange
+BleDelegate.onProfileRegister
+BleDelegate.onProfileRegister
+BleDelegate.onScanResults
+BasicFtmsTreadmill.onScanResults
+BleDelegate.onScanStateChange
+BleDelegate.onScanStateChange
+BleDelegate.onConnectedStateChanged
+BasicFtmsTreadmill.onConnectedStateChanged
+CONNECTION_STATE_CONNECTED
+btInit
+handleStack
+characteristic.requestWrite
+EXCEPTION: Operation already in Progress
+handleStack
+writing ongoing
+BleDelegate.onDescriptorWrite
+BleDelegate.onDescriptorWrite
+onWorkoutStarted
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+2
+0
+12
+onWorkoutStepComplete
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+0
+0
+12
+speed.targetValueLow:1.639000
+speed.targetValueHigh:1.695000
+targetSpeed:6.001200
+setSpeed
+handleStack
+writing ongoing
+onWorkoutStepComplete
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+0
+0
+12
+speed.targetValueLow:2.703000
+speed.targetValueHigh:2.857000
+targetSpeed:10.008000
+setSpeed
+handleStack
+writing ongoing
+onWorkoutStepComplete
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+2
+0
+12

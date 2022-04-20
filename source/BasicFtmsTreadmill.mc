@@ -99,12 +99,6 @@ class BasicFtmsTreadmill
         return _incline;
     }
     
-       function getRunningMets()
-       {
-           var mpm = _speed * 26.8224;
-        return (0.2 * mpm + 0.9 * mpm * _incline/100 + 3.5)/3.5;
-       }
-   
     function getTotalDistance() 
     {
         return _totalDistance;
@@ -163,14 +157,28 @@ class BasicFtmsTreadmill
 
     function handleStack()
     {
-        if(_device == null) {return;}       // no device connected
-        if (stack.size() == 0) {return;}    // nothing to do
-        if (writeBusy == true) {return;}    // already busy.  nothing to do
+        System.println("handleStack");
+        if(_device == null) 
+        {
+            System.println("uninitialized device");
+            return;
+        }       // no device connected
+        if (stack.size() == 0) 
+        {
+            System.println("empty stack");
+            return;
+        }    // nothing to do
+        if (writeBusy == true) 
+        {
+            System.println("writing ongoing");
+            return;
+        }    // already busy.  nothing to do
         // https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/fmcp-0000001050147089
         // https://github.com/cagnulein/qdomyos-zwift/blob/5bf7864efb074d59179813bd6b331e8bfb75ed8a/src/technogymmyruntreadmill.cpp#L225
         var characteristic = _device.getService(FITNESS_MACHINE_SERVICE).getCharacteristic(TREADMILL_CONTROL_POINT);
         try
         {
+            System.println("characteristic.requestWrite");
             writeBusy = true;
             characteristic.requestWrite(stack[0],{:writeType=>BluetoothLowEnergy.WRITE_TYPE_DEFAULT});
         
@@ -187,9 +195,9 @@ class BasicFtmsTreadmill
 
         var name = _device.getName();
         var cu = char.getUuid();
-        System.println("cu:"+cu);
-        System.println("value:"+value);
-        System.println("name:"+name);
+        // System.println("cu:"+cu);
+        // System.println("value:"+value);
+        // System.println("name:"+name);
         
         // https://github.com/cagnulein/qdomyos-zwift/blob/dd9526631ef0a8fbf5d16ea446a9ce6ce74ea934/src/solef80treadmill.cpp#L499
         if (cu.equals(TREADMILL_DATA_CHARACTERISTIC))
@@ -201,91 +209,91 @@ class BasicFtmsTreadmill
             if ((flags & TREADMILL_DATA_FLAG_MOREDATA) != TREADMILL_DATA_FLAG_MOREDATA) 
             {
                 _instantaneousSpeed = (value[offset] + 256.0 * value[offset+1]) / 100.0;
-                System.println("_instantaneousSpeed:"+_instantaneousSpeed);
+                // System.println("_instantaneousSpeed:"+_instantaneousSpeed);
                 offset += 2;
             }
 
             if ((flags & TREADMILL_DATA_FLAG_AVGSPEED) == TREADMILL_DATA_FLAG_AVGSPEED) 
             {
                 _averageSpeed = (value[offset] + 256.0 * value[offset+1]) / 100.0;
-                System.println("_averageSpeed:"+_averageSpeed);
+                // System.println("_averageSpeed:"+_averageSpeed);
                 offset += 2;
             }
 
             if ((flags & TREADMILL_DATA_FLAG_TOTALDISTANCE) == TREADMILL_DATA_FLAG_TOTALDISTANCE) 
             {
                 //todo
-                System.println("_totalDistance:");
+                // System.println("_totalDistance:");
                 offset += 3;
             }
 
             if ((flags & TREADMILL_DATA_FLAG_INCLINATION) == TREADMILL_DATA_FLAG_INCLINATION) 
             {
                 _inclination = (value[offset] + 256.0 * value[offset+1]) / 10.0;
-                System.println("_inclination:"+_inclination);
+                // System.println("_inclination:"+_inclination);
                 offset += 4; // Inclination + Ramp Angle Setting
             }
 
             if ((flags & TREADMILL_DATA_FLAG_ELEVATION) == TREADMILL_DATA_FLAG_ELEVATION) 
             {
                 //todo
-                System.println("_elevation:");
+                // System.println("_elevation:");
                 offset += 4; // Positive Elevation Gain + Negative Elevation Gain
             }
 
             if ((flags & TREADMILL_DATA_FLAG_INSTANTPACE) == TREADMILL_DATA_FLAG_INSTANTPACE) 
             {
                 //todo
-                System.println("_instantPace:");
+                // System.println("_instantPace:");
                 offset += 1;
             }
 
             if ((flags & TREADMILL_DATA_FLAG_AVERAGEPACE) == TREADMILL_DATA_FLAG_AVERAGEPACE) 
             {
                 //todo
-                System.println("_averagePace:");
+                // System.println("_averagePace:");
                 offset += 1;
             }
 
             if ((flags & TREADMILL_DATA_FLAG_EXPENERGY) == TREADMILL_DATA_FLAG_EXPENERGY) 
             {
                 _expEnergy = (value[offset] + 256.0 * value[offset+1]);
-                System.println("_expEnergy:"+_expEnergy);
+                // System.println("_expEnergy:"+_expEnergy);
                 offset += 5; //Total Energy + Energy Per Hour + Energy Per Minute
             }
 
             if ((flags & TREADMILL_DATA_FLAG_HEARTRATE) == TREADMILL_DATA_FLAG_HEARTRATE) 
             {
                 _heartRate = value[offset];
-                System.println("_heartRate:"+_heartRate);
+                // System.println("_heartRate:"+_heartRate);
                 offset += 1; 
             }
 
             if ((flags & TREADMILL_DATA_FLAG_METABOLIC) == TREADMILL_DATA_FLAG_METABOLIC) 
             {
                 //todo
-                System.println("_metabolic:");
+                // System.println("_metabolic:");
                 offset += 1; 
             }
 
             if ((flags & TREADMILL_DATA_FLAG_ELAPSEDTIME) == TREADMILL_DATA_FLAG_ELAPSEDTIME) 
             {
                 //todo
-                System.println("_elapsedTime:");
+                // System.println("_elapsedTime:");
                 offset += 2;
             }
 
             if ((flags & TREADMILL_DATA_FLAG_REMAININGTIME) == TREADMILL_DATA_FLAG_REMAININGTIME) 
             {
                 //todo
-                System.println("_remainingTime:");
+                // System.println("_remainingTime:");
                 offset += 2;
             }
 
             if ((flags & TREADMILL_DATA_FLAG_FORCEBELT) == TREADMILL_DATA_FLAG_FORCEBELT) 
             {
                 //todo
-                System.println("_forceBelt:");
+                // System.println("_forceBelt:");
                 offset += 4;
             }            
         }
@@ -331,6 +339,7 @@ class BasicFtmsTreadmill
             var characteristic = service.getCharacteristic(TREADMILL_DATA_CHARACTERISTIC);
             var cccd = characteristic.getDescriptor(Ble.cccdUuid());
             cccd.requestWrite([0x01, 0x00]b);
+            btInit();
         }
         if (state == Ble.CONNECTION_STATE_DISCONNECTED)
         {
@@ -382,13 +391,23 @@ class BasicFtmsTreadmill
         if (speed < 0.0) {speed = 0.0;}
         if (speed > 14.0) {speed = 14.0;}
         
-        var i = [FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETSPEED, 0x00, 0x00];
-        var lsb = speed * 100.0;
-        var msb = speed * 100.0 / 256.0; 
-        i[1] = (0x00FF)&(lsb.toNumber());
-        i[2] = (0x00FF)&(msb.toNumber());
+        var i = [FITNESS_MACHINE_CONTROL_POINT_OPCODE_SETTARGETSPEED, 0x00, 0x00]b;
+        var longSpeed = speed.toLong();
+        i.encodeNumber(speed,Lang.NUMBER_FORMAT_UINT16,{:offset=>1,:endianness=>Lang.ENDIAN_LITTLE});
 
         pushWrite(i);
+    }
+
+    // https://github.com/cagnulein/qdomyos-zwift/blob/a8935e11f1bce424094101b6b668ec600a1ea409/src/shuaa5treadmill.cpp#L54
+    function btInit ()
+    {
+        System.println("btInit");
+
+        var initData01 = [FITNESS_MACHINE_CONTROL_POINT_OPCODE_REQUESTCONTROL]b;
+        var initData02 = [FITNESS_MACHINE_CONTROL_POINT_OPCODE_STARTORRESUME]b;
+
+        pushWrite(initData01);
+        pushWrite(initData02);
     }
 
     function setIncline (incline)

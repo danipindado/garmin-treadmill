@@ -169,6 +169,9 @@ class StructWorkFtmsTreadmillView extends Ui.DataField
                             targetSpeed = (targetSpeed + step.targetValueHigh)/ 2.0;
                         }
 
+                        // m/s => km/h
+                        targetSpeed *= 3.6;
+                        
                         System.println("targetSpeed:"+targetSpeed);
                         _treadmillProfile.setSpeed(targetSpeed);
                     }
