@@ -334,11 +334,8 @@ class BasicFtmsTreadmill
             WatchUi.requestUpdate();
             _device = device;
             System.println("CONNECTION_STATE_CONNECTED");
-            var service = device.getService(FITNESS_MACHINE_SERVICE);
-            
-            var characteristic = service.getCharacteristic(TREADMILL_DATA_CHARACTERISTIC);
-            var cccd = characteristic.getDescriptor(Ble.cccdUuid());
-            cccd.requestWrite([0x01, 0x00]b);
+
+            subscribeNotifications();
             btInit();
         }
         if (state == Ble.CONNECTION_STATE_DISCONNECTED)
@@ -396,6 +393,38 @@ class BasicFtmsTreadmill
         i.encodeNumber(speed,Lang.NUMBER_FORMAT_UINT16,{:offset=>1,:endianness=>Lang.ENDIAN_LITTLE});
 
         pushWrite(i);
+    }
+
+    function subscribeNotifications()
+    {
+        System.println("subscribeNotification");
+        if(_device == null) 
+        {
+            System.println("uninitialized device");
+            return;
+        }       // no device connected
+        if (writeBusy == true) 
+        {
+            System.println("writing ongoing");
+            return;
+        }    // already busy.  nothing to do
+
+
+        try
+        {
+            System.println("characteristic.requestWrite");
+            writeBusy = true;
+            var service = _device.getService(FITNESS_MACHINE_SERVICE);
+            var characteristic = service.getCharacteristic(TREADMILL_DATA_CHARACTERISTIC);
+            var cccd = characteristic.getDescriptor(Ble.cccdUuid());
+            cccd.requestWrite([0x01, 0x00]b);
+        
+           //characteristic.requestRead();
+        }
+        catch (ex)
+        {
+            System.println("EXCEPTION: " + ex.getErrorMessage());
+        }
     }
 
     // https://github.com/cagnulein/qdomyos-zwift/blob/a8935e11f1bce424094101b6b668ec600a1ea409/src/shuaa5treadmill.cpp#L54

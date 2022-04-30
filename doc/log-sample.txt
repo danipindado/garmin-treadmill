@@ -1,203 +1,60 @@
-value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:1.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:1.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
+BleDelegate.onConnectedStateChanged
+BasicFtmsTreadmill.onConnectedStateChanged
+CONNECTION_STATE_CONNECTED
+subscribeNotification
+characteristic.requestWrite
+btInit
+handleStack
+writing ongoing
+handleStack
+writing ongoing
+BleDelegate.onDescriptorWrite
+BleDelegate.onDescriptorWrite
+onWorkoutStarted
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+2
+0
+12
 onWorkoutStepComplete
 has :getCurrentWorkoutStep
 label: workoutStepInfo
-value: null
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:1.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:1.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:1.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:1.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:1.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:1.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onCharacteristicChanged
-cu:00002ACD-0000-1000-8000-00805F9B34FB
-value:[164, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-name:Domyos-TC-0751
-_instantaneousSpeed:0.000000
-_totalDistance:
-_instantPace:
-_expEnergy:0.000000
-_heartRate:0
-BleDelegate.onConnectedStateChanged
-BasicFtmsTreadmill.onConnectedStateChanged
-CONNECTION_STATE_DISCONNECTED
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+0
+0
+12
+speed.targetValueLow:1.639000
+speed.targetValueHigh:1.695000
+targetSpeed:6.001200
+setSpeed
+handleStack
+writing ongoing
+onWorkoutStepComplete
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+0
+0
+12
+speed.targetValueLow:2.703000
+speed.targetValueHigh:2.857000
+targetSpeed:10.008000
+setSpeed
+handleStack
+writing ongoing
+onWorkoutStepComplete
+has :getCurrentWorkoutStep
+label: workoutStepInfo
+value: Obj: 286
+Activity.WorkoutStep
+has :targetType
+2
+0
+12
