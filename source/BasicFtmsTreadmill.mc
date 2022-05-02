@@ -335,7 +335,7 @@ class BasicFtmsTreadmill
             _device = device;
             System.println("CONNECTION_STATE_CONNECTED");
 
-            subscribeNotifications();
+            enableNotifications();
             btInit();
         }
         if (state == Ble.CONNECTION_STATE_DISCONNECTED)
@@ -347,18 +347,20 @@ class BasicFtmsTreadmill
 
     function onDescriptorRead(descriptor, status) 
     {
-        System.println("BleDelegate.onDescriptorRead");
+        System.println("BleDelegate.onDescriptorRead:"+status);
         
     }
 
     function onDescriptorWrite(descriptor, status) 
     {
-        System.println("BleDelegate.onDescriptorWrite");
+        System.println("BleDelegate.onDescriptorWrite:"+status);
+        // after enable notifications
+        writeBusy = false;
     }
 
     function onProfileRegister(uuid, status) 
     {
-        System.println("BleDelegate.onProfileRegister");
+        System.println("BleDelegate.onProfileRegister:"+status);
     }
 
     function onScanResults(scanResults)
@@ -377,7 +379,7 @@ class BasicFtmsTreadmill
 
     function onScanStateChange(scanState, status)
     {
-        System.println("BleDelegate.onScanStateChange");
+        System.println("BleDelegate.onScanStateChange:"+status);
     }
     
     function setSpeed (speed)
@@ -395,9 +397,9 @@ class BasicFtmsTreadmill
         pushWrite(i);
     }
 
-    function subscribeNotifications()
+    function enableNotifications()
     {
-        System.println("subscribeNotification");
+        System.println("enableNotifications");
         if(_device == null) 
         {
             System.println("uninitialized device");
